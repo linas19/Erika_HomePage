@@ -1,6 +1,7 @@
 .topLine {
   height: 20px;
   background-color: #D7890D;
+  width: 100%;
 }
 .title {
   margin-top: 94px;
@@ -22,7 +23,8 @@
 }
 .nav {
   display: flex;
-  margin-left: 10%;
+  padding-left: 200px;
+  padding-right: 50px;
   justify-content: space-between;
   margin-top: 101px;
   width: 100%;
@@ -34,19 +36,164 @@
 .firstPageLeftSide {
   background: #FFF3DA;
   margin-left: 20px;
+  height: 950px;
+  width: 908px;
+}
+.firstImage {
+  margin-top: 80px;
 }
 .firstPageRightSideBottom {
   margin-top: 15%;
-  margin-left: 50px;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
 }
 .firstPageRightSideBottomTitle {
   font-family: 'Montserrat', sans-serif;
   font-size: 64px;
   font-weight: 1000;
   width: 952px;
+  margin-bottom: 40px;
 }
 .firstPageRightSideBottomText {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   width: 756px;
+  margin-bottom: 40px;
+}
+.getInTouchButton {
+  border: none;
+  background: #9D4F7C;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF;
+  outline: none; 
+  height: 83px;
+  width: 356px;
+}
+.threePointsBackGround {
+  background: #FFE299;
+  display: flex;
+  width: 100%;
+  height: 620px;
+}
+.threePoints {
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 200px;
+  width: 100%;
+  position: relative;
+}
+.solution {
+  height: 547px;
+  width: 550px;
+  background: #F8CDBA;
+  margin-right: 30px;
+}
+.solutionBox {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 120px;
+}
+.solutionBackRec {
+  background: #FEFAF2;
+  height: 30px;
+  width: 277.98px;
+  position: absolute;
+  margin-top: 30px;
+}
+.solutionTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  font-weight: 1000;
+  position: relative;
+  margin-bottom: 40px;
+}
+.solutionText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
+.technology {
+  height: 547px;
+  width: 550px;
+  background: #D6ABC4;
+  margin-right: 30px;
+}
+.technologyBox {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 120px;
+}
+.technologyBackRec {
+  background: #FEFAF2;
+  height: 30px;
+  width: 277.98px;
+  position: absolute;
+  margin-top: 30px;
+}
+.technologyTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  font-weight: 1000;
+  position: relative;
+  margin-bottom: 40px;
+}
+.technologyText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
+.experience {
+  height: 547px;
+  width: 550px;
+  background: #F3BC54;
+  margin-right: 30px;
+}
+.experienceBox {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 120px;
+}
+.experienceBackRec {
+  background: #FEFAF2;
+  height: 30px;
+  width: 277.98px;
+  position: absolute;
+  margin-top: 30px;
+}
+.experienceTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  font-weight: 1000;
+  position: relative;
+  margin-bottom: 40px;
+}
+.experienceText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
+.secondPageBottom {
+  padding-top: 200px;
+  padding-left: 166px;
+  display: flex;
+  background-color: #FEEADC;
+}
+.secondPageBottomLeft {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin-right: 100px;
+  height: 800px;
+}
+.secondPageBottomLeftTitle {
+  font-size: 64px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.secondPageBottomLeftText {
+  width: 600px;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
 }
