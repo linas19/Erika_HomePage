@@ -79,15 +79,22 @@ export default function Home() {
         </div>
         <div className={styles.thirdPage}>
           <div className={styles.thirdPageTop}>
-            <div className={styles.erikaPic}>
-              <img />
+            <div className={styles.thirdPageTopLeft}>
+              <div className={styles.thirdPageTopLeftImage}>
+                <Image src='/Erika.png' width={753} height={840} alt='Image2'/>
+              </div>
             </div>
-            <div>Hi, I’m Erika. Nice to meet you!</div>
-            <div>I am a full stack JavaScript developer with a passion for creating user-centric tech products. For more than five years, I have helped companies both big and small to bring new products and features into the hands of their users.</div>
-            <div className={styles.socialMediaButtons}>
-              <button></button>
-              <button></button>
-              <button></button>
+            <div className={styles.thirdPageTopRight}>
+              <div className={styles.thirdPageTopRightText}>
+                <div className={styles.thirdPageTopRightTextIntro}>Hi, I’m Erika. Nice to meet you!</div>
+                <div className={styles.thirdPageTopRightTextDescription}>I am a full stack JavaScript developer with a passion for creating user-centric tech products. For more than five years, I have helped companies both big and small to bring new products and features into the hands of their users.</div>
+                <div className={styles.thirdPageTopRightTextButtons}>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+
             </div>
           </div>
           <div className={styles.thirdPageBottom}>
