@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 import Image from 'next/image.js'
 
 export default function Home() {
@@ -94,7 +94,6 @@ export default function Home() {
                   <button></button>
                 </div>
               </div>
-
             </div>
           </div>
           <div className={styles.thirdPageBottom}>
