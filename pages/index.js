@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 import Image from 'next/image.js'
+import React from 'react'
 import { faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
@@ -11,6 +12,11 @@ export default function Home() {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [submitted, setSubmitted] = useState(false)
+  const bottomRef = React.useRef();
+
+  const onClick = () => {
+  bottomRef.current.scrollIntoView();
+  }
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log('Sending')
@@ -58,15 +64,31 @@ export default function Home() {
           </div>
           <div className={styles.firstPageRightSide}>
             <nav className={styles.nav}>
-              <button className={styles.navButton}>APPS</button>
-              <button className={styles.navButton}>ABOUT</button>
-              <button className={styles.navButton}>BLOG</button>
-              <button className={styles.navButton} id={styles.getInTouchButton}>GET IN TOUCH</button>
+              <button className={styles.navButton}>
+                <Link href='https://www.instagram.com/'>
+                  APPS
+                </Link>
+              </button>
+              <button className={styles.navButton}>                
+                <Link href='https://www.instagram.com/'>
+                  ABOUT
+                </Link>
+              </button>
+              <button className={styles.navButton}>
+                <Link href='https://www.instagram.com/'>
+                  BLOG
+                </Link>
+              </button>
+              <button className={styles.navButton} id={styles.getInTouchButton}>
+                <Link href='https://www.instagram.com/'>
+                  GET IN TOUCH
+                </Link>
+              </button>
             </nav>
             <div className={styles.firstPageRightSideBottom}>
               <div className={styles.firstPageRightSideBottomTitle}>Turn your tech idea into a product people love</div>
               <div className={styles.firstPageRightSideBottomText}>Technology should work for you. I’m here to build your mobile or web app, so you can focus on what really matters - growing your business.</div>
-              <button className={styles.getInTouchButton}>GET IN TOUCH</button>
+              <button className={styles.getInTouchButton} onClick={onClick}>GET IN TOUCH</button>
             </div>
           </div>
         </div>
@@ -105,7 +127,7 @@ export default function Home() {
                 <p>What tech solution will work for your product shouldn’t be yet another thing for you to worry about.</p>
                 <p>I’m here to help you navigate through the murky waters of technology, so you can focus on realising your idea.</p>
               </div>
-              <button className={styles.getInTouchButton}>GET IN TOUCH</button>
+              <button className={styles.getInTouchButton} onClick={onClick}>GET IN TOUCH</button>
             </div>
             <div className={styles.secondPageBottomRight}>
               <Image src='/example-scene-2.png' width={744.66} height={594.92} alt='Image2'/>
@@ -125,15 +147,12 @@ export default function Home() {
                 <div className={styles.thirdPageTopRightTextDescription}>I am a full stack JavaScript developer with a passion for creating user-centric tech products. For more than five years, I have helped companies both big and small to bring new products and features into the hands of their users.</div>
                 <div className={styles.thirdPageTopRightTextButtons}>
                   <Link href='https://www.instagram.com/'>
-                    {/* <a>Home</a> */}
                     <FontAwesomeIcon icon={faInstagram} height='30px'/>
                   </Link>
                   <Link href='https://www.linkedin.com/'>
-                    {/* <a>Home</a> */}
                     <FontAwesomeIcon icon={faLinkedinIn} height='30px'/>
                   </Link>
                   <Link href='https://www.twitter.com/'>
-                    {/* <a>Home</a> */}
                     <FontAwesomeIcon icon={faTwitter} height='30px'/>
                   </Link>
                 </div>
@@ -180,13 +199,13 @@ export default function Home() {
             <div className={styles.fifthPageLeftTitle}>
               Don’t let your competition beat you to market
             </div>
-            <button className={styles.getInTouchButton}>GET IN TOUCH</button>
+            <button className={styles.getInTouchButton} onClick={onClick}>GET IN TOUCH</button>
           </div>
           <div className={styles.fifthPageRight}>
             <Image src='/example-scene-2.png' width={544} height={519} alt='Image2'/>
           </div>
         </div>
-        <div className={styles.sixthPage}>
+        <div className={styles.sixthPage} ref={bottomRef}>
           <div className={styles.sixthPageLeft}>
             <div className={styles.sixthPageLeftText}>Let’s get your idea from
             notepad to launchpad</div>
