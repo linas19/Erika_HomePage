@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 import Image from 'next/image.js'
+import { faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -11,6 +14,7 @@ export default function Home() {
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
         </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       </Head>
       <body>
         <div className={styles.topLine}></div>
@@ -89,9 +93,18 @@ export default function Home() {
                 <div className={styles.thirdPageTopRightTextIntro}>Hi, I’m Erika. Nice to meet you!</div>
                 <div className={styles.thirdPageTopRightTextDescription}>I am a full stack JavaScript developer with a passion for creating user-centric tech products. For more than five years, I have helped companies both big and small to bring new products and features into the hands of their users.</div>
                 <div className={styles.thirdPageTopRightTextButtons}>
-                  <button></button>
-                  <button></button>
-                  <button></button>
+                  <Link href='https://www.instagram.com/'>
+                    {/* <a>Home</a> */}
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </Link>
+                  <Link href='https://www.linkedin.com/'>
+                    {/* <a>Home</a> */}
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </Link>
+                  <Link href='https://www.twitter.com/'>
+                    {/* <a>Home</a> */}
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </Link>
                 </div>
               </div>
             </div>
