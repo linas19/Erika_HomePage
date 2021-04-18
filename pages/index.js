@@ -146,14 +146,25 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.fifthPage}>
-          <div className={styles.fifthPageTopLeft}>
-            <div className={styles.fifthPageTopLeftText}>Let’s get your idea from
+          <div className={styles.fifthPageLeft}>
+            <div className={styles.fifthPageLeftTitle}>
+              Don’t let your competition beat you to market
+            </div>
+            <button className={styles.getInTouchButton}>GET IN TOUCH</button>
+          </div>
+          <div className={styles.fifthPageRight}>
+            <Image src='/example-scene-2.png' width={544} height={519} alt='Image2'/>
+          </div>
+        </div>
+        <div className={styles.sixthPage}>
+          <div className={styles.sixthPageTopLeft}>
+            <div className={styles.sixthPageTopLeftText}>Let’s get your idea from
             notepad to launchpad</div>
-            <div className={styles.fifthPageTopLeftImage}>
+            <div className={styles.sixthPageTopLeftImage}>
             <Image src='/example-scene-2.png' width={744.66} height={594.92} alt='Image2'/>
             </div>
           </div>
-          <div className={styles.fifthPageTopRight}>
+          <div className={styles.sixthPageTopRight}>
             <form>
               <input type='text'/>
               <input type='text'/>
