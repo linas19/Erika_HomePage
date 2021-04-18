@@ -75,7 +75,7 @@ export default function Home() {
                 </Link>
               </button>
               <button className={styles.navButton}>
-                <Link href='https://www.instagram.com/'>
+                <Link href='/blog/blog'>
                   BLOG
                 </Link>
               </button>
