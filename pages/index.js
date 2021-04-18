@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 import Image from 'next/image.js'
-import { faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import Link from 'next/link'
 
 export default function Home() {
@@ -95,15 +96,15 @@ export default function Home() {
                 <div className={styles.thirdPageTopRightTextButtons}>
                   <Link href='https://www.instagram.com/'>
                     {/* <a>Home</a> */}
-                    <FontAwesomeIcon icon={faInstagram} />
+                    <FontAwesomeIcon icon={faInstagram} height='30px'/>
                   </Link>
                   <Link href='https://www.linkedin.com/'>
                     {/* <a>Home</a> */}
-                    <FontAwesomeIcon icon={faLinkedin} />
+                    <FontAwesomeIcon icon={faLinkedinIn} height='30px' border/>
                   </Link>
                   <Link href='https://www.twitter.com/'>
                     {/* <a>Home</a> */}
-                    <FontAwesomeIcon icon={faTwitter} />
+                    <FontAwesomeIcon icon={faTwitter} height='30px'/>
                   </Link>
                 </div>
               </div>
