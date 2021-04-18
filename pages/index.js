@@ -195,10 +195,10 @@ export default function Home() {
             </div>
           </div>
             <form className={styles.sixthPageRight}>
-              <input className={styles.sixthPageRightTopBox} type='text' placeholder='What should I call you?'/>
-              <input className={styles.sixthPageRightTopBox} type='text' placeholder='What’s your email?'/>
-              <input className={styles.sixthPageRightBottomBox} type='text' placeholder='Let me know about the awesome product you have - what is it about? What type help are you looking for?'/>
-              <input className={styles.submit} type='submit' value='Send'/>
+              <input className={styles.sixthPageRightTopBox} type='text' placeholder='What should I call you?'  onChange={(e)=>{setName(e.target.value)}} name='name'/>
+              <input className={styles.sixthPageRightTopBox} type='text' placeholder='What’s your email?'  onChange={(e)=>{setEmail(e.target.value)}} name='email'/>
+              <input className={styles.sixthPageRightBottomBox} type='text' placeholder='Let me know about the awesome product you have - what is it about? What type help are you looking for?' onChange={(e)=>{setMessage(e.target.value)}} name='message'/>
+              <input className={styles.submit} type='submit' value='Send' onClick={(e)=>{handleSubmit(e)}}/>
             </form>
 
         </div>
@@ -245,23 +245,6 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </div>
-        <div className={styles.container}>
-          < form className={styles.main} >
-          < formGroup className={styles.inputGroup} >
-            < label htmlFor='name'>Name</label>
-            < input type='text' onChange={(e)=>{setName(e.target.value)}} name='name' className={styles.inputField} />  
-          </formGroup>
-          < formGroup className={styles.inputGroup} >
-            < label htmlFor='email'>Email</label>
-            < input type='email' onChange={(e)=>{setEmail(e.target.value)}} name='email' className={styles.inputField} />
-          </formGroup>
-          < formGroup className={styles.inputGroup} >
-            < label htmlFor='message'>Message</label>
-            < input type='text' onChange={(e)=>{setMessage(e.target.value)}} name='message' className={styles.inputField} />
-          </formGroup>
-          < input type='submit' onClick={(e)=>{handleSubmit(e)}}/>
-          </form >
         </div>
       </body>
       <main className={styles.main}>
