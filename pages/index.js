@@ -119,15 +119,41 @@ export default function Home() {
             <div className={styles.thirdPageBottomAuthor}>Alex Brown, Senior Product Manager at Eurosport</div>
           </div>
         </div>
-        <div className={styles.thirdPage}>
-          <div className={styles.thirdPageTopLeft}>
-            <div>Let’s get your idea from
-            notepad to launchpad</div>
-            <div>
-              <img />
+        <div className={styles.fourthPage}>
+          <div className={styles.fourthPageTitle}>How the magic happens:</div>
+          <div className={styles.fourthPageBottom}>
+            <div className={styles.fourthPagePoints}>
+              <div className={styles.fourthPagePointNumber}>1.</div>
+              <div className={styles.fourthPagePointSquare}></div>
+              <div className={styles.fourthPagePointNumber}>2.</div>
+              <div className={styles.fourthPagePointSquare}></div>
+              <div className={styles.fourthPagePointNumber}>3.</div>
+            </div>
+            <div className={styles.fourthPagePointText}>
+              <div className={styles.fourthPagePointTextBox}>
+                <div className={styles.fourthPagePointTextTitle}>Let's chat</div>
+                <div className={styles.fourthPagePointTextText}>It all starts with a small first step - getting in touch</div>
+              </div>
+              <div className={styles.fourthPagePointTextBox}>
+                <div className={styles.fourthPagePointTextTitle}>Prep and plan</div>
+                <div className={styles.fourthPagePointTextText}>Every project has its own needs. I will work with you to understand your unique requirements and expectations before we agree on a plan of action</div>
+              </div>
+              <div className={styles.fourthPagePointTextBox}>
+                <div className={styles.fourthPagePointTextTitle}>Let’s get it done</div>
+                <div className={styles.fourthPagePointTextText}>I will work alongside your existing team or bring together a group of trusted freelancers to realise your idea on budget and on time</div>
+              </div>
             </div>
           </div>
-          <div className={styles.thirdPageTopRight}>
+        </div>
+        <div className={styles.fifthPage}>
+          <div className={styles.fifthPageTopLeft}>
+            <div className={styles.fifthPageTopLeftText}>Let’s get your idea from
+            notepad to launchpad</div>
+            <div className={styles.fifthPageTopLeftImage}>
+            <Image src='/example-scene-2.png' width={744.66} height={594.92} alt='Image2'/>
+            </div>
+          </div>
+          <div className={styles.fifthPageTopRight}>
             <form>
               <input type='text'/>
               <input type='text'/>
