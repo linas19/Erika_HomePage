@@ -157,39 +157,63 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.sixthPage}>
-          <div className={styles.sixthPageTopLeft}>
-            <div className={styles.sixthPageTopLeftText}>Let’s get your idea from
+          <div className={styles.sixthPageLeft}>
+            <div className={styles.sixthPageLeftText}>Let’s get your idea from
             notepad to launchpad</div>
-            <div className={styles.sixthPageTopLeftImage}>
-            <Image src='/example-scene-2.png' width={744.66} height={594.92} alt='Image2'/>
+            <div className={styles.sixthPageLeftImage}>
+            <Image src='/launch.png' width={787.21} height={571} alt='Image2'/>
             </div>
           </div>
-          <div className={styles.sixthPageTopRight}>
-            <form>
-              <input type='text'/>
-              <input type='text'/>
-              <input type='text'/>
-              <input type='submit' value='Send'/>
+            <form className={styles.sixthPageRight}>
+              <input className={styles.sixthPageRightTopBox} type='text' placeholder='What should I call you?'/>
+              <input className={styles.sixthPageRightTopBox} type='text' placeholder='What’s your email?'/>
+              <input className={styles.sixthPageRightBottomBox} type='text' placeholder='Let me know about the awesome product you have - what is it about? What type help are you looking for?'/>
+              <input className={styles.submit} type='submit' value='Send'/>
             </form>
-          </div>
-          <div className={styles.thridPageBottomLeft}>
-            <div>JONIKA</div>
-            <div className={styles.socialMediaButtons}>
-              <button></button>
-              <button></button>
-              <button></button>
+
+        </div>
+        <div className={styles.footer}>
+          <div className={styles.footerLeft}>
+            <div className={styles.footerLeftTitle}>JONIKA</div>
+            <div className={styles.footerLeftButtons}>
+              <Link href='https://www.instagram.com/'>
+                <FontAwesomeIcon icon={faInstagram} height='30px'/>
+              </Link>
+              <Link href='https://www.linkedin.com/'>
+                <FontAwesomeIcon icon={faLinkedinIn} height='30px'/>
+              </Link>
+              <Link href='https://www.twitter.com/'>
+                <FontAwesomeIcon icon={faTwitter} height='30px'/>
+              </Link>
             </div>
-            <div><a href=''>hello@jonika.io</a></div>
-            <p>
+            <div className={styles.footerLeftEmail}>
+              <Link href='https://hello@jonika.io/'>
+                hello@jonika.io
+              </Link>
+            </div>
+            {/* <a href=''>hello@jonika.io</a></div> */}
+            <div className={styles.footerLeftAddress}>
               <div>86 - 90 Paul Street</div>
               <div>London</div>
               <div>EC2 4NE</div>
-            </p>
+            </div>
           </div>
-          <div className={styles.thirdPageBottomRight}>
-            <div><a>Terms and Conditions</a></div>
-            <div><a>Privacy Policy</a></div>
-            <div><a>Cookie Policy</a></div>
+          <div className={styles.footerRight}>
+            <div className={styles.footerLeftLink}>
+              <Link href='https://hello@jonika.io/'>
+                Terms and Conditions
+              </Link>
+            </div>
+            <div className={styles.footerLeftLink}>
+              <Link href='https://hello@jonika.io/'>
+                Privacy Policy
+              </Link>
+            </div>
+            <div className={styles.footerLeftLink}>
+              <Link href='https://hello@jonika.io/'>
+                Cookie Policy
+              </Link>
+            </div>
           </div>
         </div>
       </body>
@@ -197,9 +221,9 @@ export default function Home() {
 
       </main>
 
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
 
-      </footer>
+      </footer> */}
     </div>
   )
 }
