@@ -100,7 +100,7 @@ export default function Home() {
                   </Link>
                   <Link href='https://www.linkedin.com/'>
                     {/* <a>Home</a> */}
-                    <FontAwesomeIcon icon={faLinkedinIn} height='30px' border/>
+                    <FontAwesomeIcon icon={faLinkedinIn} height='30px'/>
                   </Link>
                   <Link href='https://www.twitter.com/'>
                     {/* <a>Home</a> */}

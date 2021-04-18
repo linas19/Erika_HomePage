@@ -215,6 +215,12 @@
     .thirdPageTopRight {
       background-color: red;
       padding-top: 500px;
+      .thirdPageTopRightText {
+        .thirdPageTopRightTextIntro {
+          font-size: 48px;
+          font-family: 'Montserrat', sans-serif;
+        }
+      }
     }
   }
 }
