@@ -6,6 +6,7 @@ import { faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-s
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
 import Link from 'next/link'
+import NavBar from './components/navbar.js'
 
 export default function Home() {
   const [name, setName] = useState('')
