@@ -3,13 +3,15 @@
     background-color: #D7890D;
     width: 100%;
 }
+#blogButton {
+    font-weight: 1000;
+}
 .navBar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     background: #FEFAF2;
     .navBarLeft {
-        background: #FFF3DA;
+        width: 1600px;
         margin-left: 20px;
         .navBarLeftTitle {
             margin-top: 94px;
@@ -17,7 +19,6 @@
             font-size: 48px;
             font-family: 'Montserrat', sans-serif;
             font-weight: bold;
-            background: #FFF3DA;
         }
     }
     .navBarRight {
