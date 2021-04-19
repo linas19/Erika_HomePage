@@ -3,6 +3,9 @@
   background-color: #D7890D;
   width: 100%;
 }
+.container {
+  max-width: 1441px;
+}
 #getInTouchButton {
   font-weight: 1000;
 }
@@ -71,8 +74,7 @@
   font-weight: bold;
   color: #FFFFFF;
   outline: none; 
-  height: 83px;
-  width: 356px;
+  padding: 16px 24px;
 }
 .secondPage {
   .threePointsBackGround {
@@ -405,6 +407,7 @@
       background-color: #FEFAF2;
       align-items: center;
       border: 3px solid #000000;
+      padding-top: 50px;
     }
   }
 }

@@ -216,7 +216,7 @@ export default function Home() {
             <form className={styles.sixthPageRight}>
               <input className={styles.sixthPageRightTopBox} type='text' placeholder='What should I call you?'  onChange={(e)=>{setName(e.target.value)}} name='name'/>
               <input className={styles.sixthPageRightTopBox} type='text' placeholder='What’s your email?'  onChange={(e)=>{setEmail(e.target.value)}} name='email'/>
-              <input className={styles.sixthPageRightBottomBox} type='text' placeholder='Let me know about the awesome product you have - what is it about? What type help are you looking for?' onChange={(e)=>{setMessage(e.target.value)}} name='message'/>
+              <textarea className={styles.sixthPageRightBottomBox} type='text' placeholder='Let me know about the awesome product you have - what is it about? What type help are you looking for?' onChange={(e)=>{setMessage(e.target.value)}} name='message'/>
               <input className={styles.submit} type='submit' value='Send' onClick={(e)=>{handleSubmit(e)}}/>
             </form>
 

@@ -1,0 +1,39 @@
+.topLine {
+    height: 20px;
+    background-color: #D7890D;
+    width: 100%;
+}
+#blogButton {
+    font-weight: 1000;
+}
+.navBar {
+    display: flex;
+    flex-direction: row;
+    background: #FEFAF2;
+    .navBarLeft {
+        width: 1600px;
+        margin-left: 20px;
+        .navBarLeftTitle {
+            margin-top: 94px;
+            padding-left: 139px;
+            font-size: 48px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+    }
+    .navBarRight {
+        display: flex;
+        padding-left: 200px;
+        padding-right: 50px;
+        justify-content: space-between;
+        margin-top: 101px;
+        width: 100%;
+        .navBarRightButton {
+            border: none;
+            background: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            outline: none; 
+        }
+    }
+}
