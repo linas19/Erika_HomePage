@@ -1,0 +1,60 @@
+.firstPage {
+  display: flex;
+  margin: auto;
+  max-width: 1441px;
+  padding-bottom: 131px;
+  background-color: blue;
+  .firstPageLeft {
+    .firstImage {
+      padding-top: 100px;
+      padding-left: 103px;
+      min-width: 584px;
+      min-height: 553px;
+    }
+  }
+  .firstPageRight {
+    padding-top: 80px;
+    padding-left: 150px;
+    display: flex;
+    flex-direction: column;
+    .firstPageRightTitle {
+        max-width: 650px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 59px;
+        letter-spacing: -0.01em;
+        padding-right: 137px;
+    }
+    .firstPageRightText {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-right: 283px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .getInTouchDiv {
+        padding-right: 530px;
+        .getInTouchButton {
+            min-width: 155px;
+            min-height: 49px;
+            border: none;
+            background: #9d4f7c;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 17px;
+            color: #ffffff;
+            outline: none;
+          }
+    }
+
+  }
+}
+
+

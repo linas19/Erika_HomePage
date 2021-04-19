@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
 import Link from 'next/link'
 import NavBar from './components/navbar.js'
+import FirstPage from './homePage/firstPage.js'
 
 export default function Home() {
   const [name, setName] = useState('')
@@ -55,7 +56,10 @@ export default function Home() {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       </Head>
       <body>
-        <div className={styles.topLine}></div>
+        <NavBar />
+        <FirstPage />
+        
+        {/* <div className={styles.topLine}></div>
         <div className={styles.firstPage}>
           <div className={styles.firstPageLeftSide}>
             <div className={styles.title}>JONIKA</div>
@@ -92,7 +96,7 @@ export default function Home() {
               <button className={styles.getInTouchButton} onClick={onClick}>GET IN TOUCH</button>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className={styles.secondPage}>
           <div className={styles.threePointsBackGround}>
             <div className={styles.threePoints}>

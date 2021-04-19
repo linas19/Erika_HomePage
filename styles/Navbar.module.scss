@@ -5,6 +5,7 @@
 }
 .navBar {
     max-width: 1441px;
+    background-color: red;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -12,9 +13,12 @@
         .navBarLeftTitle {
             padding-top: 54px;
             padding-left: 72px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 800;
             font-size: 24px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
+            line-height: 29px;
+            letter-spacing: 0.15em;
         }
     }
     .navBarRight {
