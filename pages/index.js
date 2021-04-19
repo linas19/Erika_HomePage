@@ -8,6 +8,8 @@ import { useState } from 'react'
 import Link from 'next/link'
 import NavBar from './components/navbar.js'
 import FirstPage from './homePage/firstPage.js'
+import SecondPage from './homePage/secondPage.js'
+
 
 export default function Home() {
   const [name, setName] = useState('')
@@ -58,46 +60,8 @@ export default function Home() {
       <body>
         <NavBar />
         <FirstPage />
-        
-        {/* <div className={styles.topLine}></div>
-        <div className={styles.firstPage}>
-          <div className={styles.firstPageLeftSide}>
-            <div className={styles.title}>JONIKA</div>
-            <div className={styles.firstImage}>
-              <Image src='/example-scene-1.png' width={740} height={682} alt='Image1'/>
-            </div>
-          </div>
-          <div className={styles.firstPageRightSide}>
-            <nav className={styles.nav}>
-              <button className={styles.navButton}>
-                <Link href='https://www.instagram.com/'>
-                  APPS
-                </Link>
-              </button>
-              <button className={styles.navButton}>                
-                <Link href='https://www.instagram.com/'>
-                  ABOUT
-                </Link>
-              </button>
-              <button className={styles.navButton}>
-                <Link href='/blog/blog'>
-                  BLOG
-                </Link>
-              </button>
-              <button className={styles.navButton} id={styles.getInTouchButton}>
-                <Link href='https://www.instagram.com/'>
-                  GET IN TOUCH
-                </Link>
-              </button>
-            </nav>
-            <div className={styles.firstPageRightSideBottom}>
-              <div className={styles.firstPageRightSideBottomTitle}>Turn your tech idea into a product people love</div>
-              <div className={styles.firstPageRightSideBottomText}>Technology should work for you. I’m here to build your mobile or web app, so you can focus on what really matters - growing your business.</div>
-              <button className={styles.getInTouchButton} onClick={onClick}>GET IN TOUCH</button>
-            </div>
-          </div>
-        </div> */}
-        <div className={styles.secondPage}>
+        <SecondPage />
+        {/* <div className={styles.secondPage}>
           <div className={styles.threePointsBackGround}>
             <div className={styles.threePoints}>
               <div className={styles.solution}>
@@ -138,7 +102,7 @@ export default function Home() {
               <Image src='/example-scene-2.png' width={744.66} height={594.92} alt='Image2'/>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className={styles.thirdPage}>
           <div className={styles.thirdPageTop}>
             <div className={styles.thirdPageTopLeft}>
