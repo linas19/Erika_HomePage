@@ -66,7 +66,6 @@ export default function SecondPage() {
             </p>
           </div>
           <GetInTouchButton />
-          {/* <button className={styles.getInTouchButton} onClick={onClick}>GET IN TOUCH</button> */}
         </div>
         <div className={styles.secondPageBottomRight}>
           <Image

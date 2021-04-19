@@ -9,6 +9,7 @@ import Link from 'next/link'
 import NavBar from './components/navbar.js'
 import FirstPage from './homePage/firstPage.js'
 import SecondPage from './homePage/secondPage.js'
+import ThirdPage from './homePage/thirdPage.js'
 
 
 export default function Home() {
@@ -61,82 +62,7 @@ export default function Home() {
         <NavBar />
         <FirstPage />
         <SecondPage />
-        {/* <div className={styles.secondPage}>
-          <div className={styles.threePointsBackGround}>
-            <div className={styles.threePoints}>
-              <div className={styles.solution}>
-                <div className={styles.solutionBox}>
-                  <div className={styles.solutionBackRec}></div>
-                  <div className={styles.solutionTitle}>Solution</div>
-                  <div className={styles.solutionText}>Development work can sometimes feel like a mystery, so I work closely with your product and design teams to help them explore solutions and define a product roadmap that meets your goals.</div>
-                </div>
-              </div>
-              <div className={styles.technology}>
-                <div className={styles.technologyBox}>
-                  <div className={styles.technologyBackRec}></div>
-                  <div className={styles.technologyTitle}>Technology</div>
-                  <div className={styles.technologyText}>Building an app that is both stable and scalable is not easy but I have been fortunate to have worked with some of the latest Javascript technologies on a variety of problems. I adapt my approach to meet the specific needs of your team and product.</div>
-                </div>
-              </div>
-              <div className={styles.experience}>
-                <div className={styles.experienceBox}>
-                  <div className={styles.experienceBackRec}></div>
-                  <div className={styles.experienceTitle}>Experience</div>
-                  <div className={styles.experienceText}>I have helped define and develop applications and features for global corporates as well as early-stage startups and industries ranging from social media management to sports TV to consumer analytics.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={styles.secondPageBottom}>
-            <div className={styles.secondPageBottomLeft}>
-              <div className={styles.secondPageBottomLeftTitle}>Technology should
-              work for you</div>
-              <div className={styles.secondPageBottomLeftText}>
-                <p>Let’s be honest - creating a successful tech product that people love is hard. You have to juggle ever-changing stakeholder expectations, user needs with sometimes strict deadlines and tight budgets on top of it all.</p>
-                <p>What tech solution will work for your product shouldn’t be yet another thing for you to worry about.</p>
-                <p>I’m here to help you navigate through the murky waters of technology, so you can focus on realising your idea.</p>
-              </div>
-              <button className={styles.getInTouchButton} onClick={onClick}>GET IN TOUCH</button>
-            </div>
-            <div className={styles.secondPageBottomRight}>
-              <Image src='/example-scene-2.png' width={744.66} height={594.92} alt='Image2'/>
-            </div>
-          </div>
-        </div> */}
-        <div className={styles.thirdPage}>
-          <div className={styles.thirdPageTop}>
-            <div className={styles.thirdPageTopLeft}>
-              <div className={styles.thirdPageTopLeftImage}>
-                <Image src='/Erika.png' width={753} height={840} alt='Image2'/>
-              </div>
-            </div>
-            <div className={styles.thirdPageTopRight}>
-              <div className={styles.thirdPageTopRightText}>
-                <div className={styles.thirdPageTopRightTextIntro}>Hi, I’m Erika. Nice to meet you!</div>
-                <div className={styles.thirdPageTopRightTextDescription}>I am a full stack JavaScript developer with a passion for creating user-centric tech products. For more than five years, I have helped companies both big and small to bring new products and features into the hands of their users.</div>
-                <div className={styles.thirdPageTopRightTextButtons}>
-                  <Link href='https://www.instagram.com/'>
-                    <FontAwesomeIcon icon={faInstagram} height='30px'/>
-                  </Link>
-                  <Link href='https://www.linkedin.com/'>
-                    <FontAwesomeIcon icon={faLinkedinIn} height='30px'/>
-                  </Link>
-                  <Link href='https://www.twitter.com/'>
-                    <FontAwesomeIcon icon={faTwitter} height='30px'/>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={styles.thirdPageBottom}>
-            <div className={styles.thirdPageBottomText}>
-              <p>I’ve been really impressed in my time working with Erika in her role as one of the leading developers in the Eurosport team.</p>
-              <p>I find Erika astute, approachable and engaging - she takes the time and effort to walk through implications and options for decisions we need to make and is a really solid trusted sounding board on technical feasibility and approaches to requirements needs.</p>
-              <p>On top of being a really good developer and really hard working, Erika is a joy to work with from a business and stakeholder engagement perspective and I hope to work with her again in the future.</p>
-            </div>
-            <div className={styles.thirdPageBottomAuthor}>Alex Brown, Senior Product Manager at Eurosport</div>
-          </div>
-        </div>
+        <ThirdPage />
         <div className={styles.fourthPage}>
           <div className={styles.fourthPageTitle}>How the magic happens:</div>
           <div className={styles.fourthPageBottom}>
