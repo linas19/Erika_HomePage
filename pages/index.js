@@ -13,6 +13,8 @@ import HiSection from './homePage/hiSection/HiSection.js'
 import TechnologyShouldSection from './homePage/technologyShouldSection/TechnologyShouldSection.js'
 import AlexSection from './homePage/alexSection/AlexSection.js'
 import MagicSection from './homePage/magicSection/MagicSection.js'
+import CompetitionSection from './homePage/competitionSection/CompetitionSection.js'
+
 
 
 export default function Home() {
@@ -78,6 +80,9 @@ export default function Home() {
         </section>
         <section className={styles.magicSection}>
           <MagicSection />
+        </section>
+        <section className={styles.competitionSection}>
+          <CompetitionSection />
         </section>
         {/* <div className={styles.fourthPage}>
           <div className={styles.fourthPageTitle}>How the magic happens:</div>
