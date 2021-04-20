@@ -1,7 +1,7 @@
-import styles from "../../styles/NavBar.module.scss";
+import styles from "./NavBar.module.scss";
 import Head from "next/head";
 import Link from "next/link";
-import NavBarLink from './navBarLink.js'
+import NavBarLink from '../NavBarLink/NavBarLink.js'
 
 export default function NavBar() {
   return (
@@ -25,15 +25,9 @@ export default function NavBar() {
           </div>
           <div className={styles.navBarRight}>
             <NavBarLink link="https//www.instagram.com/" name="APPS"/>
-            <button className={styles.navBarRightButton}>
-              <Link href="https://www.instagram.com/">ABOUT</Link>
-            </button>
-            <button className={styles.navBarRightButton} id={styles.blogButton}>
-              <Link href="/blog/blog">BLOG</Link>
-            </button>
-            <button className={styles.navBarRightButton}>
-              <Link href="../">GET IN TOUCH</Link>
-            </button>
+            <NavBarLink link="https//www.instagram.com/" name="ABOUT"/>
+            <NavBarLink link="/blog/blog" name="BLOG"/>
+            <NavBarLink link="https//www.instagram.com/" name="GET IN TOUCH" highlighted={true}/>
           </div>
         </div>
       </body>

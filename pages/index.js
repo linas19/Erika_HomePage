@@ -6,8 +6,8 @@ import { faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-s
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
 import Link from 'next/link'
-import NavBar from './components/navbar.js'
-import FirstPage from './homePage/firstPage.js'
+import NavBar from './components/NavBar/NavBar.js'
+import FirstPage from './homePage/firstSection/FirstSection.js'
 import SecondPage from './homePage/secondPage.js'
 import ThirdPage from './homePage/thirdPage.js'
 
@@ -61,9 +61,9 @@ export default function Home() {
       <body>
         <NavBar />
         <FirstPage />
-        <SecondPage />
-        <ThirdPage />
-        <div className={styles.fourthPage}>
+        {/* <SecondPage />
+        <ThirdPage /> */}
+        {/* <div className={styles.fourthPage}>
           <div className={styles.fourthPageTitle}>How the magic happens:</div>
           <div className={styles.fourthPageBottom}>
             <div className={styles.fourthPagePoints}>
@@ -135,7 +135,6 @@ export default function Home() {
                 hello@jonika.io
               </Link>
             </div>
-            {/* <a href=''>hello@jonika.io</a></div> */}
             <div className={styles.footerLeftAddress}>
               <div>86 - 90 Paul Street</div>
               <div>London</div>
@@ -159,15 +158,12 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </body>
       <main className={styles.main}>
 
       </main>
 
-      {/* <footer className={styles.footer}>
-
-      </footer> */}
     </div>
   )
 }

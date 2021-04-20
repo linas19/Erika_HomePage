@@ -1,5 +1,5 @@
 import Image from "next/image.js";
-import GetInTouchButton from "../components/getInTouchButton.js";
+import GetInTouchButton from "../components/GetInTouchButton/GetInTouchButton.js";
 import styles from "../../styles/ThirdPage.module.scss";
 import Link from 'next/link'
 import { faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'

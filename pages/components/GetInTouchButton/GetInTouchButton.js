@@ -1,4 +1,4 @@
-import styles from "../../styles/GetInTouchButton.module.scss";
+import styles from "./GetInTouchButton.module.scss";
 
 export default function GetInTouchButton() {
     const onClick = () => {

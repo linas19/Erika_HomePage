@@ -1,14 +1,14 @@
-import styles from "../../styles/Navbar.module.scss";
+import styles from "./NavBarLink.module.scss";
 import Link from "next/link";
 
 const NavBarLink = ({highlighted, name, link}) => {
   const styleClass = highlighted
-    ? styles.navBarRightButtonHighlighted
-    : styles.navBarRightButton;
+    ? styles.navBarButtonHighlighted
+    : styles.navBarButton;
     console.log(styleClass)
   return (
     <button className={styleClass}>
-      <Link href={link}>{name}</Link>
+      <Link href={link} highlighted={false}>{name}</Link>
     </button>
   );
 }

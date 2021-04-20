@@ -1,6 +1,6 @@
 import Image from "next/image.js";
-import styles from "../../styles/FirstPage.module.scss";
-import GetInTouchButton from '../components/getInTouchButton.js'
+import styles from "./FirstSection.module.scss";
+import GetInTouchButton from '../../components/GetInTouchButton/GetInTouchButton.js'
 
 export default function FirstPage() {
   const onClick = () => {
@@ -27,9 +27,6 @@ export default function FirstPage() {
           app, so you can focus on what really matters - growing your business.
         </div>
         <div className={styles.getInTouchDiv}>
-        {/* <button className={styles.getInTouchButton} onClick={onClick}>
-          GET IN TOUCH
-        </button> */}
         <GetInTouchButton />
         </div>
 
