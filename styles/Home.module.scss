@@ -1,17 +1,11 @@
-.topLine {
-  height: 20px;
-  background-color: #D7890D;
-  width: 100%;
+.firstSection {
+  background: linear-gradient(
+    to right,
+    #FFF3DA 41%,
+    #FEFAF2 41% 100%
+  );
 }
-.container {
-  // max-width: 1441px;
-  margin:auto;
-  // display: flex;
-  // justify-content: center;
-}
-#getInTouchButton {
-  font-weight: 1000;
-}
+
 .secondPage {
   .threePointsBackGround {
     background: #FFE299;
