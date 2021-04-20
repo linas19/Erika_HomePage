@@ -12,6 +12,8 @@ import ThreePointsSection from './homePage/threePointSection/ThreePointsSection.
 import HiSection from './homePage/hiSection/HiSection.js'
 import TechnologyShouldSection from './homePage/technologyShouldSection/TechnologyShouldSection.js'
 import AlexSection from './homePage/alexSection/AlexSection.js'
+import MagicSection from './homePage/magicSection/MagicSection.js'
+
 
 export default function Home() {
   const [name, setName] = useState('')
@@ -73,6 +75,9 @@ export default function Home() {
         </section>
         <section className={styles.alexSection}>
           <AlexSection />
+        </section>
+        <section className={styles.magicSection}>
+          <MagicSection />
         </section>
         {/* <div className={styles.fourthPage}>
           <div className={styles.fourthPageTitle}>How the magic happens:</div>
