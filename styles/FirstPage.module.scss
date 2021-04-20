@@ -3,7 +3,7 @@
   margin: auto;
   max-width: 1441px;
   padding-bottom: 131px;
-  background-color: blue;
+  // background-color: blue;
   .firstPageLeft {
     .firstImage {
       padding-top: 100px;
@@ -17,6 +17,7 @@
     padding-left: 150px;
     display: flex;
     flex-direction: column;
+    background-color: grey;
     .firstPageRightTitle {
         max-width: 650px;
         font-family: Montserrat;

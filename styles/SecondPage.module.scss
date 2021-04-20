@@ -4,6 +4,7 @@
   .threePointsBackGround {
     background: #ffe299;
     display: flex;
+    min-height: 500px;
     .threePoints {
       display: flex;
       justify-content: space-evenly;
@@ -11,6 +12,7 @@
       padding-top: 100px;
       margin-left: 72px;
       margin-right: 72px;
+      position: absolute;
       .solution {
         background: #f8cdba;
         margin-right: 30px;
