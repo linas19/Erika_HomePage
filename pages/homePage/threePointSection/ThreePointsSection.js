@@ -1,10 +1,10 @@
 import Image from "next/image.js";
-import GetInTouchButton from "../components/GetInTouchButton/GetInTouchButton.js";
-import styles from "../../styles/SecondPage.module.scss";
+import GetInTouchButton from "../../components/GetInTouchButton/GetInTouchButton.js";
+import styles from "./ThreePointsSection.module.scss";
 
-export default function SecondPage() {
+export default function SecondSection() {
   return (
-    <div className={styles.secondPage}>
+    <div className={styles.secondSection}>
       <div className={styles.threePointsBackGround}>
         <div className={styles.threePoints}>
           <div className={styles.solution}>
@@ -42,38 +42,6 @@ export default function SecondPage() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className={styles.secondPageBottom}>
-        <div className={styles.secondPageBottomLeft}>
-          <div className={styles.secondPageBottomLeftTitle}>
-            Technology should work for you
-          </div>
-          <div className={styles.secondPageBottomLeftText}>
-            <p>
-              Let’s be honest - creating a successful tech product that people
-              love is hard. You have to juggle ever-changing stakeholder
-              expectations, user needs with sometimes strict deadlines and tight
-              budgets on top of it all.
-            </p>
-            <p>
-              What tech solution will work for your product shouldn’t be yet
-              another thing for you to worry about.
-            </p>
-            <p>
-              I’m here to help you navigate through the murky waters of
-              technology, so you can focus on realising your idea.
-            </p>
-          </div>
-          <GetInTouchButton />
-        </div>
-        <div className={styles.secondPageBottomRight}>
-          <Image
-            src="/example-scene-2.png"
-            width={744.66}
-            height={594.92}
-            alt="Image2"
-          />
         </div>
       </div>
     </div>

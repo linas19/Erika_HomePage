@@ -7,10 +7,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
 import Link from 'next/link'
 import NavBar from './components/NavBar/NavBar.js'
-import FirstPage from './homePage/firstSection/FirstSection.js'
-import SecondPage from './homePage/secondPage.js'
-import ThirdPage from './homePage/thirdPage.js'
-
+import FirstSection from './homePage/firstSection/FirstSection.js'
+import ThreePointsSection from './homePage/threePointSection/ThreePointsSection.js'
+import HiSection from './homePage/hiSection/HiSection.js'
+import TechnologyShouldSection from './homePage/technologyShouldSection/TechnologyShouldSection.js'
 
 export default function Home() {
   const [name, setName] = useState('')
@@ -61,11 +61,15 @@ export default function Home() {
       <body>
         <section className={styles.firstSection}>
           <NavBar />
-          <FirstPage />
+          <FirstSection />
         </section>
-
-        {/* <SecondPage />
-        <ThirdPage /> */}
+        <ThreePointsSection />
+        <section className={styles.technologyShouldSection}>
+          <TechnologyShouldSection />
+        </section>
+        <section className={styles.hiSection}>
+          <HiSection />
+        </section>
         {/* <div className={styles.fourthPage}>
           <div className={styles.fourthPageTitle}>How the magic happens:</div>
           <div className={styles.fourthPageBottom}>

@@ -1,10 +1,10 @@
-.secondPage {
-  max-width: 1441px;
-  margin: auto;
+.secondSection {
+  background: #ffe299;
   .threePointsBackGround {
-    background: #ffe299;
     display: flex;
     min-height: 500px;
+    max-width: 1441px;
+    margin: auto;
     .threePoints {
       display: flex;
       justify-content: space-evenly;

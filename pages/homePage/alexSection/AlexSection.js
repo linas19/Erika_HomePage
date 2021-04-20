@@ -1,13 +1,13 @@
 import Image from "next/image.js";
-import GetInTouchButton from "../components/GetInTouchButton/GetInTouchButton.js";
-import styles from "../../styles/ThirdPage.module.scss";
+import GetInTouchButton from "../../components/GetInTouchButton/GetInTouchButton.js";
+import styles from "./HiSection.module.scss";
 import Link from 'next/link'
 import { faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function ThirdPage() {
+export default function HiSection() {
   return (
-    <div className={styles.thirdPage}>
+    <div className={styles.hiSection}>
       <div className={styles.thirdPageTop}>
         <div className={styles.thirdPageTopLeft}>
           <div className={styles.thirdPageTopLeftImage}>

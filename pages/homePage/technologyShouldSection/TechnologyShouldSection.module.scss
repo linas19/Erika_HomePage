@@ -1,0 +1,25 @@
+.technologyShouldSection {
+  padding-top: 256px;
+  display: flex;
+  justify-content: center;
+  max-width: 1441px;
+  padding-left: 162px;
+  padding-right: 136px;
+  .secondPageBottomLeft {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 800px;
+    .secondPageBottomLeftTitle {
+      font-size: 64px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+    }
+    .secondPageBottomLeftText {
+      width: 600px;
+      font-size: 24px;
+      font-family: "Montserrat", sans-serif;
+      margin-bottom: 20px;
+    }
+  }
+}
