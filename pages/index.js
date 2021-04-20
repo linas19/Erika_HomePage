@@ -11,6 +11,7 @@ import FirstSection from './homePage/firstSection/FirstSection.js'
 import ThreePointsSection from './homePage/threePointSection/ThreePointsSection.js'
 import HiSection from './homePage/hiSection/HiSection.js'
 import TechnologyShouldSection from './homePage/technologyShouldSection/TechnologyShouldSection.js'
+import AlexSection from './homePage/alexSection/AlexSection.js'
 
 export default function Home() {
   const [name, setName] = useState('')
@@ -69,6 +70,9 @@ export default function Home() {
         </section>
         <section className={styles.hiSection}>
           <HiSection />
+        </section>
+        <section className={styles.alexSection}>
+          <AlexSection />
         </section>
         {/* <div className={styles.fourthPage}>
           <div className={styles.fourthPageTitle}>How the magic happens:</div>
