@@ -8,7 +8,7 @@ const NavBarLink = ({highlighted, name, link}) => {
     console.log(styleClass)
   return (
     <button className={styleClass}>
-      <Link href={link} highlighted={false}>{name}</Link>
+      <Link className={styles.link} href={link} highlighted={false}>{name}</Link>
     </button>
   );
 }

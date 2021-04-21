@@ -1,0 +1,13 @@
+.navBar {
+    max-width: 1441px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    .navBarRight {
+        display: flex;
+        padding-right: 72px;
+        justify-content:flex-start;
+        padding-top: 58px;
+        width: 100%;
+    }
+}

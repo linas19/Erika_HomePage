@@ -9,7 +9,6 @@
     text-align: center;
     outline: none; 
     padding-right: 42px;
-    cursor: pointer;
 }
 .navBarButtonHighlighted {
     border: none;
@@ -19,5 +18,8 @@
     outline: none; 
     padding-right: 42px;
     font-weight: bold;
+    cursor: pointer;
+}
+.link {
     cursor: pointer;
 }

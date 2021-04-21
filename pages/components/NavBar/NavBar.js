@@ -1,5 +1,4 @@
 import styles from "./NavBar.module.scss";
-import Head from "next/head";
 import NavBarLink from '../NavBarLink/NavBarLink.js'
 
 export default function NavBar() {

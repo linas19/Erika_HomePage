@@ -5,12 +5,13 @@ import Head from "next/head";
 import React from "react";
 import { fetchEntries } from "./util/contentfulPosts.js";
 import LatestPost from "../components/LatestPost/LatestPost.js";
+import BlogNavBar from "../components/BlogNavBar/BlogNavBar.js"
 
 export default function Blog({posts}) {
 
   console.log(posts[posts.length - 1]);
   const latest = posts[posts.length - 1];
-  
+
   return (
     <div>
       <Head>
@@ -26,6 +27,7 @@ export default function Blog({posts}) {
       </Head>
       <NavBar />
       <LatestPost heroImage={latest.heroImage.fields.file.url} title={latest.title} description={latest.description}/>
+      <BlogNavBar />
       {/* <div className="posts">
         {posts.map((p) => {
           console.log('hedflljho', p.heroImage.fields.file.url)
