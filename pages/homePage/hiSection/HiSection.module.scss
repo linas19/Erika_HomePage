@@ -5,12 +5,15 @@
   padding-bottom: 210px;
   display: flex;
   .hiSectionLeft {
+    width: 50%;
     padding-left: 125px;
     .hiSectionLeftImage {
     }
   }
   .hiSectionRight {
-    padding-top: 100px;
+    width: 50%;
+    padding-right: 10%;
+    padding-top: 5%;
     .hiSectionRightText {
       .hiSectionRightTextIntro {
         font-family: Montserrat;
@@ -22,6 +25,7 @@
         margin-bottom: 39px;
       }
       .hiSectionRightTextDescription {
+        padding-right: 25%;
         font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
