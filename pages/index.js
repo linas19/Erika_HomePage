@@ -15,6 +15,7 @@ import AlexSection from './homePage/alexSection/AlexSection.js'
 import MagicSection from './homePage/magicSection/MagicSection.js'
 import CompetitionSection from './homePage/competitionSection/CompetitionSection.js'
 import FormSection from './homePage/formSection/FormSection.js'
+import Footer from './components/Footer/Footer.js'
 
 export default function Home() {
   const [name, setName] = useState('')
@@ -86,6 +87,7 @@ export default function Home() {
         <section className={styles.formSection} >
           <FormSection />
         </section>
+        <Footer />
         {/* <div className={styles.fourthPage}>
           <div className={styles.fourthPageTitle}>How the magic happens:</div>
           <div className={styles.fourthPageBottom}>

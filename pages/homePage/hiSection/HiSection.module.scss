@@ -7,8 +7,6 @@
   .hiSectionLeft {
     width: 50%;
     padding-left: 125px;
-    .hiSectionLeftImage {
-    }
   }
   .hiSectionRight {
     width: 50%;
@@ -37,6 +35,7 @@
         display: flex;
         justify-content: space-between;
         width: 183px;
+        cursor: pointer;
       }
     }
   }
