@@ -1,11 +1,6 @@
 import styles from "./Footer.module.scss";
 import Link from "next/link";
-import {
-  faInstagram,
-  faLinkedinIn,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import SocialMediaButtons from "../SocialMediaButtons/SocialMediaButtons.js";
 
 export default function Footer() {
   return (
@@ -13,17 +8,11 @@ export default function Footer() {
       <div className={styles.footerContainer}>
         <div className={styles.footerLeft}>
           <div className={styles.footerLeftTitle}>JONIKA</div>
-          <div className={styles.footerLeftButtons}>
-            <Link href="https://www.instagram.com/">
-              <FontAwesomeIcon icon={faInstagram} height="30px" />
-            </Link>
-            <Link href="https://www.linkedin.com/">
-              <FontAwesomeIcon icon={faLinkedinIn} height="30px" />
-            </Link>
-            <Link href="https://www.twitter.com/">
-              <FontAwesomeIcon icon={faTwitter} height="30px" />
-            </Link>
-          </div>
+          <SocialMediaButtons
+            instagramLink={"https://www.instagram.com/"}
+            linkedInLink={"https://www.linkedin.com/"}
+            twitterLink={"https://www.twitter.com/"}
+          />
           <div className={styles.footerLeftEmail}>
             <Link href="https://hello@jonika.io/">hello@jonika.io</Link>
           </div>

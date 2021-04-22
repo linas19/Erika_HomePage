@@ -1,12 +1,6 @@
 import Image from "next/image.js";
 import styles from "./HiSection.module.scss";
-import Link from "next/link";
-import {
-  faInstagram,
-  faLinkedinIn,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import SocialMediaButtons from "../../components/SocialMediaButtons/SocialMediaButtons.js";
 
 export default function HiSection() {
   return (
@@ -27,17 +21,11 @@ export default function HiSection() {
             companies both big and small to bring new products and features into
             the hands of their users.
           </div>
-          <div className={styles.hiSectionButtons}>
-            <Link href="https://www.instagram.com/">
-              <FontAwesomeIcon icon={faInstagram} height="30px" />
-            </Link>
-            <Link href="https://www.linkedin.com/">
-              <FontAwesomeIcon icon={faLinkedinIn} height="30px" />
-            </Link>
-            <Link href="https://www.twitter.com/">
-              <FontAwesomeIcon icon={faTwitter} height="30px" />
-            </Link>
-          </div>
+          <SocialMediaButtons
+            instagramLink={"https://www.instagram.com/"}
+            linkedInLink={"https://www.linkedin.com/"}
+            twitterLink={"https://www.twitter.com/"}
+          />
         </div>
       </div>
     </div>

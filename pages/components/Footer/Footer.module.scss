@@ -20,13 +20,6 @@
       letter-spacing: 0.15em;
       margin-bottom: 38px;
     }
-    .footerLeftButtons {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-bottom: 38px;
-      cursor: pointer;
-    }
     .footerLeftEmail {
       font-family: Montserrat;
       font-style: normal;
@@ -35,6 +28,7 @@
       line-height: 29px;
       letter-spacing: 0.15em;
       margin-bottom: 34px;
+      padding-top:34px;
     }
     .footerLeftAddress {
       font-family: Montserrat;
