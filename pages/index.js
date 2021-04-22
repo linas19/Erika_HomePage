@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
       <body>
         <section className={styles.firstSection}>
-          <NavBar />
+          <NavBar getIn={true}/>
           <FirstSection scrollToContact={scrollToContact}/>
         </section>
         <ThreePointsSection />

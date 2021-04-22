@@ -31,7 +31,7 @@ export default function Blog({ posts }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         ></link>
       </Head>
-      <NavBar />
+      <NavBar blog={true} />
       <LatestPost
         heroImage={latest.heroImage.fields.file.url}
         title={latest.title}

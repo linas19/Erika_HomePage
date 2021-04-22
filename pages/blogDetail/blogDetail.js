@@ -22,7 +22,7 @@ export default function BlogDetail({ posts }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         ></link>
       </Head>
-      <NavBar />
+      <NavBar  blog={true} />
       <BlogDetailContent
         heroImage={posts[0].heroImage.fields.file.url}
         title={posts[0].title}

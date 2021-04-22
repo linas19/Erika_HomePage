@@ -1,7 +1,7 @@
 import styles from "./NavBar.module.scss";
 import NavBarLink from '../NavBarLink/NavBarLink.js'
 
-export default function NavBar() {
+export default function NavBar({apps, about, blog, getIn}) {
   return (
     <div>
       <body>
@@ -11,10 +11,10 @@ export default function NavBar() {
             <div className={styles.navBarLeftTitle}>JONIKA</div>
           </div>
           <div className={styles.navBarRight}>
-            <NavBarLink link="https//www.instagram.com/" name="APPS"/>
-            <NavBarLink link="/blogDetail/blogDetail" name="ABOUT"/>
-            <NavBarLink link="/blog/blog" name="BLOG"/>
-            <NavBarLink link="../" name="GET IN TOUCH" highlighted={true}/>
+            <NavBarLink link="https//www.instagram.com/" name="APPS" highlighted={apps}/>
+            <NavBarLink link="/blogDetail/blogDetail" name="ABOUT" highlighted={about}/>
+            <NavBarLink link="/blog/blog" name="BLOG" highlighted={blog}/>
+            <NavBarLink link="../" name="GET IN TOUCH" highlighted={getIn}/>
           </div>
         </div>
       </body>
