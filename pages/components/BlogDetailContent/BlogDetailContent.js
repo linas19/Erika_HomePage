@@ -1,13 +1,6 @@
 import styles from "./BlogDetailContent.module.scss";
-import Link from "next/link.js";
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import {
-  faInstagram,
-  faLinkedinIn,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SocialMediaButtons from "../SocialMediaButtons/SocialMediaButtons.js";
 
 function BlogDetailContent({

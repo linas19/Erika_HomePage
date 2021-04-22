@@ -10,7 +10,7 @@ import BlogContentTable from "../components/BlogContentTable/BlogContentTable.js
 import BlogDetailContent from "../components/BlogDetailContent/BlogDetailContent.js";
 
 export default function BlogDetail({ posts }) {
-  console.log(posts[0].publishDate)
+  console.log(posts[0].publishDate);
   return (
     <div className={styles.blog}>
       <Head>
@@ -25,7 +25,32 @@ export default function BlogDetail({ posts }) {
         ></link>
       </Head>
       <NavBar />
-        <BlogDetailContent heroImage={posts[0].heroImage.fields.file.url} title={posts[0].title} author={posts[0].author.fields.name} authorImage={posts[0].author.fields.image.fields.file.url} publishDate={posts[0].publishDate} body={posts[0].body}/>
+      <BlogDetailContent
+        heroImage={posts[0].heroImage.fields.file.url}
+        title={posts[0].title}
+        author={posts[0].author.fields.name}
+        authorImage={posts[0].author.fields.image.fields.file.url}
+        publishDate={posts[0].publishDate}
+        body={posts[0].body}
+      />
+      <div className={styles.youMay}>You may also like:</div>
+      <div className={styles.blogTableFirstRow}>
+        <BlogContentTable
+          heroImage={posts[0].heroImage.fields.file.url}
+          title={posts[0].title}
+          description={posts[0].description}
+        />
+        <BlogContentTable
+          heroImage={posts[0].heroImage.fields.file.url}
+          title={posts[0].title}
+          description={posts[0].description}
+        />
+        <BlogContentTable
+          heroImage={posts[0].heroImage.fields.file.url}
+          title={posts[0].title}
+          description={posts[0].description}
+        />
+      </div>
       <Footer />
     </div>
   );
