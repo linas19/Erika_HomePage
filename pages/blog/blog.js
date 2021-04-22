@@ -1,19 +1,24 @@
-import styles from "../../styles/blog.module.scss";
+import styles from "./blog.module.scss";
 import NavBar from "../components/NavBar/NavBar.js";
 import Footer from "../components/Footer/Footer.js";
 import Head from "next/head";
 import React from "react";
 import { fetchEntries } from "./util/contentfulPosts.js";
 import LatestPost from "../components/LatestPost/LatestPost.js";
-import BlogNavBar from "../components/BlogNavBar/BlogNavBar.js"
+import BlogNavBar from "../components/BlogNavBar/BlogNavBar.js";
+import BlogContentTable from "../components/BlogContentTable/BlogContentTable.js";
 
-export default function Blog({posts}) {
-
-  console.log(posts[posts.length - 1]);
-  const latest = posts[posts.length - 1];
+export default function Blog({ posts }) {
+  console.log(posts[0]);
+  const latest = posts[0];
+  const second = posts[posts.length - 2];
+  const third = posts[posts.length - 3];
+  const fourth = posts[posts.length - 4];
+  const fifth = posts[posts.length - 5];
+  const sixth = posts[posts.length - 6];
 
   return (
-    <div>
+    <div className={styles.blog}>
       <Head>
         <title>BLOG</title>
         <style>
@@ -26,11 +31,51 @@ export default function Blog({posts}) {
         ></link>
       </Head>
       <NavBar />
-      <LatestPost heroImage={latest.heroImage.fields.file.url} title={latest.title} description={latest.description}/>
+      <LatestPost
+        heroImage={latest.heroImage.fields.file.url}
+        title={latest.title}
+        description={latest.description}
+      />
       <BlogNavBar />
+      <div className={styles.blogTable}>
+        <div className={styles.blogTableFirstRow}>
+          <BlogContentTable
+            heroImage={latest.heroImage.fields.file.url}
+            title={latest.title}
+            description={latest.description}
+          />
+          <BlogContentTable
+            heroImage={second.heroImage.fields.file.url}
+            title={second.title}
+            description={second.description}
+          />
+          <BlogContentTable
+            heroImage={third.heroImage.fields.file.url}
+            title={third.title}
+            description={third.description}
+          />
+        </div>
+        <div className={styles.blogTableSecondRow}>
+          <BlogContentTable
+            heroImage={fourth.heroImage.fields.file.url}
+            title={fourth.title}
+            description={fourth.description}
+          />
+          <BlogContentTable
+            heroImage={fifth.heroImage.fields.file.url}
+            title={fifth.title}
+            description={fifth.description}
+          />
+          <BlogContentTable
+            heroImage={sixth.heroImage.fields.file.url}
+            title={sixth.title}
+            description={sixth.description}
+          />
+        </div>
+      </div>
+
       {/* <div className="posts">
         {posts.map((p) => {
-          console.log('hedflljho', p.heroImage.fields.file.url)
           return (
             <LatestPost
               heroImage={p.heroImage.fields.file.url}
@@ -43,19 +88,19 @@ export default function Blog({posts}) {
         })}
       </div> */}
       <Footer />
-
     </div>
   );
 }
 export async function getStaticProps() {
-  const res = await fetchEntries()
+  const res = await fetchEntries();
+  console.log(res);
   const posts = await res.map((p) => {
-    return p.fields
-  })
+    return p.fields;
+  });
 
   return {
     props: {
       posts,
     },
-  }
+  };
 }

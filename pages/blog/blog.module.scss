@@ -1,0 +1,21 @@
+.blogTableFirstRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.blogTable {
+    width: 1441px;
+    margin: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+}
+.blogTableSecondRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.blog {
+    background-color: #FEFAF2;
+}

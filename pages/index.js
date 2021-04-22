@@ -15,8 +15,8 @@ import Footer from './components/Footer/Footer.js'
 export default function Home() {
 
   const bottomRef = React.useRef();
-  const onClick = () => {
-  bottomRef.current.scrollIntoView();
+  const scrollToContact = () => {
+    bottomRef.current.scrollIntoView();
   }
   return (
     
@@ -31,7 +31,7 @@ export default function Home() {
       <body>
         <section className={styles.firstSection}>
           <NavBar />
-          <FirstSection />
+          <FirstSection scrollToContact={scrollToContact}/>
         </section>
         <ThreePointsSection />
         <section className={styles.technologyShouldSection}>
@@ -49,7 +49,7 @@ export default function Home() {
         <section className={styles.competitionSection}>
           <CompetitionSection />
         </section>
-        <section className={styles.formSection} >
+        <section className={styles.formSection} ref={bottomRef}>
           <FormSection />
         </section>
         <Footer />

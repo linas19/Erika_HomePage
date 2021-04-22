@@ -3,11 +3,12 @@
     margin: auto;
     display: flex;
     flex-direction: row;
-    .navBarRight {
+    .navBarContent {
         display: flex;
         padding-right: 72px;
         justify-content:flex-start;
         padding-top: 58px;
         width: 100%;
+        padding-left: 5%;
     }
 }

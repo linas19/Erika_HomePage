@@ -3,13 +3,8 @@ import Image from "next/image.js";
 
 function LatestPost({
   title,
-  slug,
   heroImage,
   description,
-  body,
-  author,
-  publishDate,
-  tags,
 }) {
   return (
     <div className={styles.latestPost}>
@@ -23,14 +18,6 @@ function LatestPost({
         <div className={styles.latestPostRightReadMore}>READ MORE</div>
       </div>
     </div>
-    // <div className="post">
-    //   <img alt={description} src={`https:${file.url}`} />
-    //   <div className="description">{description}</div>
-    //   <div className="text">
-    //     <h2>{title}</h2>
-    //     <h3>{date}</h3>
-    //   </div>
-    // </div>
   );
 }
 
