@@ -4,8 +4,6 @@ import Footer from "../components/Footer/Footer.js";
 import Head from "next/head";
 import React from "react";
 import { fetchEntries } from "./util/contentfulPosts.js";
-import LatestPost from "../components/LatestPost/LatestPost.js";
-import BlogNavBar from "../components/BlogNavBar/BlogNavBar.js";
 import BlogContentTable from "../components/BlogContentTable/BlogContentTable.js";
 import BlogDetailContent from "../components/BlogDetailContent/BlogDetailContent.js";
 
@@ -36,19 +34,24 @@ export default function BlogDetail({ posts }) {
       <div className={styles.youMay}>You may also like:</div>
       <div className={styles.blogTableFirstRow}>
         <BlogContentTable
-          heroImage={posts[0].heroImage.fields.file.url}
-          title={posts[0].title}
-          description={posts[0].description}
+          heroImage={posts[3].heroImage.fields.file.url}
+          title={posts[3].title}
+          description={posts[3].description}
+          slug={posts[3].slug}
+
         />
         <BlogContentTable
-          heroImage={posts[0].heroImage.fields.file.url}
-          title={posts[0].title}
-          description={posts[0].description}
+          heroImage={posts[1].heroImage.fields.file.url}
+          title={posts[1].title}
+          description={posts[1].description}
+          slug={posts[1].slug}
+
         />
         <BlogContentTable
-          heroImage={posts[0].heroImage.fields.file.url}
-          title={posts[0].title}
-          description={posts[0].description}
+          heroImage={posts[2].heroImage.fields.file.url}
+          title={posts[2].title}
+          description={posts[2].description}
+          slug={posts[2].slug}
         />
       </div>
       <Footer />
@@ -61,7 +64,6 @@ export async function getStaticProps() {
   const posts = await res.map((p) => {
     return p.fields;
   });
-
   return {
     props: {
       posts,

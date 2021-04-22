@@ -45,16 +45,19 @@ export default function Blog({ posts }) {
             heroImage={latest.heroImage.fields.file.url}
             title={latest.title}
             description={latest.description}
+            slug={latest.slug}
           />
           <BlogContentTable
             heroImage={second.heroImage.fields.file.url}
             title={second.title}
             description={second.description}
+            slug={second.slug}
           />
           <BlogContentTable
             heroImage={third.heroImage.fields.file.url}
             title={third.title}
             description={third.description}
+            slug={third.slug}
           />
         </div>
         <div className={styles.blogTableSecondRow}>
@@ -62,16 +65,19 @@ export default function Blog({ posts }) {
             heroImage={fourth.heroImage.fields.file.url}
             title={fourth.title}
             description={fourth.description}
+            slug={fourth.slug}
           />
           <BlogContentTable
             heroImage={fifth.heroImage.fields.file.url}
             title={fifth.title}
             description={fifth.description}
+            slug={fifth.slug}
           />
           <BlogContentTable
             heroImage={sixth.heroImage.fields.file.url}
             title={sixth.title}
             description={sixth.description}
+            slug={sixth.slug}
           />
         </div>
       </div>

@@ -5,14 +5,11 @@ import SocialMediaButtons from "../SocialMediaButtons/SocialMediaButtons.js";
 
 function BlogDetailContent({
   title,
-  slug,
   heroImage,
-  description,
   body,
   author,
   authorImage,
   publishDate,
-  tags,
 }) {
   return (
     <div className={styles.blogDetailContent}>

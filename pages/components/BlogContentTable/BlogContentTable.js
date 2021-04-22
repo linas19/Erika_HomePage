@@ -1,15 +1,18 @@
 import styles from "./BlogContentTable.module.scss";
 
-function BlogContentTable({
-  title,
-  heroImage,
-  description,
-}) {
+function BlogContentTable({ title, heroImage, description, slug }) {
   return (
     <div className={styles.blogContentTable}>
-        <img  className={styles.blogContentTableImage} src={`https:${heroImage}`} width={683/2} height={429/2} />
+      <a className={styles.blogContentTableLink} href={`/blog/blog/${slug}`}>
+        <img
+          className={styles.blogContentTableImage}
+          src={`https:${heroImage}`}
+          width={683 / 2}
+          height={429 / 2}
+        />
         <div className={styles.blogContentTableTitle}>{title}</div>
-        <div className={styles.blogContentTableDescription}>{description}</div>
+      </a>
+      <div className={styles.blogContentTableDescription}>{description}</div>
     </div>
   );
 }
