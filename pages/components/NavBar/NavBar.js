@@ -12,7 +12,7 @@ export default function NavBar() {
           </div>
           <div className={styles.navBarRight}>
             <NavBarLink link="https//www.instagram.com/" name="APPS"/>
-            <NavBarLink link="https//www.instagram.com/" name="ABOUT"/>
+            <NavBarLink link="/blogDetail/blogDetail" name="ABOUT"/>
             <NavBarLink link="/blog/blog" name="BLOG"/>
             <NavBarLink link="../" name="GET IN TOUCH" highlighted={true}/>
           </div>

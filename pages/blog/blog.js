@@ -9,13 +9,14 @@ import BlogNavBar from "../components/BlogNavBar/BlogNavBar.js";
 import BlogContentTable from "../components/BlogContentTable/BlogContentTable.js";
 
 export default function Blog({ posts }) {
-  console.log(posts[0]);
-  const latest = posts[0];
+  
+  const latest = posts[posts.length - 1];
   const second = posts[posts.length - 2];
   const third = posts[posts.length - 3];
   const fourth = posts[posts.length - 4];
   const fifth = posts[posts.length - 5];
   const sixth = posts[posts.length - 6];
+  console.log('slug  : ', latest.slug);
 
   return (
     <div className={styles.blog}>
@@ -35,6 +36,7 @@ export default function Blog({ posts }) {
         heroImage={latest.heroImage.fields.file.url}
         title={latest.title}
         description={latest.description}
+        slug={latest.slug}
       />
       <BlogNavBar />
       <div className={styles.blogTable}>
