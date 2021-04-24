@@ -59,6 +59,7 @@ export default function BlogDetail({ posts }) {
   );
 }
 export async function getStaticProps() {
+  
   const res = await fetchEntries();
   console.log(res);
   const posts = await res.map((p) => {
