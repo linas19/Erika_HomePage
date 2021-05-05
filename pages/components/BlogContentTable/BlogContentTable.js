@@ -1,9 +1,10 @@
 import styles from "./BlogContentTable.module.scss";
 
 function BlogContentTable({ title, heroImage, description, slug }) {
+  console.log('slug:', slug)
   return (
     <div className={styles.blogContentTable}>
-      <a className={styles.blogContentTableLink} href={`/blog/blog/${slug}`}>
+      <a className={styles.blogContentTableLink} href={`/blog/${slug}`}>
         <img
           className={styles.blogContentTableImage}
           src={`https:${heroImage}`}

@@ -9,14 +9,13 @@ import BlogNavBar from "../components/BlogNavBar/BlogNavBar.js";
 import BlogContentTable from "../components/BlogContentTable/BlogContentTable.js";
 
 export default function Blog({ posts }) {
-  
   const latest = posts[posts.length - 1];
   const second = posts[posts.length - 2];
   const third = posts[posts.length - 3];
   const fourth = posts[posts.length - 4];
   const fifth = posts[posts.length - 5];
   const sixth = posts[posts.length - 6];
-  console.log('slug  : ', latest.slug);
+  console.log("slug  : ", latest.slug);
 
   return (
     <div className={styles.blog}>
@@ -39,62 +38,19 @@ export default function Blog({ posts }) {
         slug={latest.slug}
       />
       <BlogNavBar />
-      <div className={styles.blogTable}>
-        <div className={styles.blogTableFirstRow}>
-          <BlogContentTable
-            heroImage={latest.heroImage.fields.file.url}
-            title={latest.title}
-            description={latest.description}
-            slug={latest.slug}
-          />
-          <BlogContentTable
-            heroImage={second.heroImage.fields.file.url}
-            title={second.title}
-            description={second.description}
-            slug={second.slug}
-          />
-          <BlogContentTable
-            heroImage={third.heroImage.fields.file.url}
-            title={third.title}
-            description={third.description}
-            slug={third.slug}
-          />
-        </div>
-        <div className={styles.blogTableSecondRow}>
-          <BlogContentTable
-            heroImage={fourth.heroImage.fields.file.url}
-            title={fourth.title}
-            description={fourth.description}
-            slug={fourth.slug}
-          />
-          <BlogContentTable
-            heroImage={fifth.heroImage.fields.file.url}
-            title={fifth.title}
-            description={fifth.description}
-            slug={fifth.slug}
-          />
-          <BlogContentTable
-            heroImage={sixth.heroImage.fields.file.url}
-            title={sixth.title}
-            description={sixth.description}
-            slug={sixth.slug}
-          />
-        </div>
-      </div>
-
-      {/* <div className="posts">
-        {posts.map((p) => {
+      <div className={styles.blogTableFirstRowDetail}>
+        {posts.map((post) => {
           return (
-            <LatestPost
-              heroImage={p.heroImage.fields.file.url}
-              // key={p.date}
-              // date={p.date}
-              // image={p.image}
-              // title={p.title}
+            <BlogContentTable
+              key={post.slug}
+              heroImage={post.heroImage.fields.file.url}
+              title={post.title}
+              description={post.description}
+              slug={post.slug}
             />
           );
         })}
-      </div> */}
+      </div>
       <Footer />
     </div>
   );

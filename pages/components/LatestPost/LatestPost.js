@@ -13,7 +13,7 @@ function LatestPost({ title, heroImage, description, slug }) {
         <div className={styles.latestPostRightTitle}>{title}</div>
         <div className={styles.latestPostRightDescription}>{description}</div>
         <button className={styles.latestPostRightReadMore}>
-          <Link className={styles.link} href={`/blog/blog/${slug}`}>
+          <Link className={styles.link} href={`/blog/${slug}`}>
             READ MORE
           </Link>
         </button>

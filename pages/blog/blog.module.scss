@@ -1,21 +1,58 @@
 .blogTableFirstRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .blogTable {
-    width: 1441px;
-    margin: auto;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 40px;
+  width: 1441px;
+  margin: auto;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 40px;
 }
 .blogTableSecondRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 100px;
 }
 .blog {
-    background-color: #FEFAF2;
+  background-color: #fefaf2;
+}
+.youMay {
+  width: 1441px;
+  margin: auto;
+  padding-top: 50px;
+  padding-left: 72px;
+  align-items: flex-start;
+  padding-bottom: 50px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 29px;
+}
+.blogTableFirstRowDetail {
+  max-width: 1441px;
+  margin: auto;
+  display: grid;
+  grid-gap: 1rem;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-top: 10px;
+}
+@media (min-width: 500px) {
+  .blogTableFirstRowDetail {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .blogTableFirstRowDetail {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (width: 500px) {
+  .blogTableFirstRowDetail {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
