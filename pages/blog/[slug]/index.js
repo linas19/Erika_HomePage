@@ -54,12 +54,10 @@ export async function getStaticProps({ params }) {
     return p.fields;
   });
   const post = posts[0];
-  console.log(post)
   const relatedPostsRes = await fetchEntries(undefined, post.tags && post.tags[0], 3);
   const relatedPosts = await relatedPostsRes.map((p) => {
     return p.fields;
   });
-  console.log("related", relatedPosts)
   return {
     props: {
       post: posts[0],

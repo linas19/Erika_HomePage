@@ -2,20 +2,24 @@ import styles from "./blog.module.scss";
 import NavBar from "../components/NavBar/NavBar.js";
 import Footer from "../components/Footer/Footer.js";
 import Head from "next/head";
-import React from "react";
+import React, { useState } from "react";
+
 import { fetchEntries } from "./util/contentfulPosts.js";
 import LatestPost from "../components/LatestPost/LatestPost.js";
 import BlogNavBar from "../components/BlogNavBar/BlogNavBar.js";
 import BlogContentTable from "../components/BlogContentTable/BlogContentTable.js";
 
 export default function Blog({ posts }) {
+  const [highlightedButton, setHighlightedButton] = useState("all");
   const latest = posts[posts.length - 1];
-  const second = posts[posts.length - 2];
-  const third = posts[posts.length - 3];
-  const fourth = posts[posts.length - 4];
-  const fifth = posts[posts.length - 5];
-  const sixth = posts[posts.length - 6];
-  console.log("slug  : ", latest.slug);
+  const remainingPosts = posts.slice(0, posts.length - 1);
+  const filteredPosts = remainingPosts.filter((post) => {
+    if (highlightedButton === "all") {
+      return true;
+    }
+    return post.tags && post.tags.includes(highlightedButton);
+  });
+  console.log(remainingPosts);
 
   return (
     <div className={styles.blog}>
@@ -37,9 +41,9 @@ export default function Blog({ posts }) {
         description={latest.description}
         slug={latest.slug}
       />
-      <BlogNavBar />
+      <BlogNavBar onClick={setHighlightedButton} />
       <div className={styles.blogTableFirstRowDetail}>
-        {posts.map((post) => {
+        {filteredPosts.map((post) => {
           return (
             <BlogContentTable
               key={post.slug}
@@ -53,11 +57,10 @@ export default function Blog({ posts }) {
       </div>
       <Footer />
     </div>
-  );
+  ); 
 }
 export async function getStaticProps() {
   const res = await fetchEntries();
-  console.log(res);
   const posts = await res.map((p) => {
     return p.fields;
   });

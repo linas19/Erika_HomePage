@@ -1,17 +1,20 @@
-import NavBarLink from '../NavBarLink/NavBarLink.js'
 import styles from "./BlogNavBar.module.scss";
 
-function BlogNavBar({all, techStart, getInto, prod}) {
-    return (
-            <div className={styles.navBar}>
-              <div className={styles.navBarContent}>
-                <NavBarLink link="https//www.instagram.com/" name="All" highlighted={all}/>
-                <NavBarLink link="https//www.instagram.com/" name="TECH STARTUPS" highlighted={techStart}/>
-                <NavBarLink link="/blog/blog" name="GETTING INTO TECH" highlighted={getInto}/>
-                <NavBarLink link="../" name="PRODUCTIVITY" highlighted={prod}/>
-              </div>
-            </div>
-      );
+
+function BlogNavBar({ highlighted, onClick }) {
+  const styleClass = highlighted
+    ? styles.navBarButtonHighlighted
+    : styles.navBarButton;
+  return (
+    <div className={styles.navBar}>
+      <div className={styles.navBarContent}>
+        <button className={styleClass} onClick={() => onClick('all')}>ALL</button>
+        <button className={styleClass} onClick={() => onClick('techStartups')}>TECH STARTUPS</button>
+        <button className={styleClass} onClick={() => onClick('gettingIntoTech')}>GETTING INTO TECH</button>
+        <button className={styleClass} onClick={() => onClick('productivity')}>PRODUCTIVITY</button>
+      </div>
+    </div>
+  );
 }
 
-export default BlogNavBar
+export default BlogNavBar;
