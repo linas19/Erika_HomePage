@@ -1,35 +1,33 @@
 .firstPage {
   display: flex;
-  margin: auto;
-  max-width: 1441px;
-  padding-bottom: 131px;
+  margin-top: 20px;
   .firstPageLeft {
-    .firstImage {
-      padding-top: 100px;
-      padding-left: 103px;
-      min-width: 584px;
-      min-height: 553px;
-    }
+    background-color: red;
+    margin-left: 50px;
+    margin-right: 50px;
+    min-width: 300px;
+    max-width: 450px;
   }
   .firstPageRight {
-    padding-top: 170px;
-    padding-left: 80px;
+    background-color: red;
+    margin-left: 50px;
+    margin-right: 100px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
+    padding-top: 30px;
     .firstPageRightTitle {
-      max-width: 650px;
       font-family: Montserrat;
       font-style: normal;
       font-weight: 800;
       font-size: 48px;
       line-height: 59px;
       letter-spacing: -0.01em;
-      padding-right: 137px;
     }
     .firstPageRightText {
-      padding-top: 24px;
+      // padding-top: 24px;
       padding-bottom: 24px;
-      padding-right: 283px;
+      // padding-right: 283px;
       font-family: Montserrat;
       font-style: normal;
       font-weight: normal;
@@ -39,5 +37,11 @@
     .getInTouchDiv {
       padding-right: 530px;
     }
+  }
+}
+@media screen and (max-width: 650px) {
+  .firstPage {
+    display: flex;
+    flex-direction: column;
   }
 }
