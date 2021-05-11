@@ -1,28 +1,27 @@
 .magicSection {
-  width: 1441px;
   margin: auto;
   flex-direction: column;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 146px;
-  padding-bottom: 164px;
+  padding-top: 5%;
+  padding-bottom: 5%;
   .magicSectionTitle {
+    text-align: center;
     font-size: 64px;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
   }
   .magicSectionBottom {
-    padding-top: 167px;
-    margin-left: 289px;
+    padding-top: 5%;
+    margin-left: 5%;
     display: flex;
     flex-direction: row;
     .magicSectionPoints {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-right: 104px;
       .magicSectionPointSquare {
         height: 150px;
         width: 3px;
@@ -46,21 +45,80 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: left;
-      padding-top: 40px;
-      padding-bottom: 30px;
+      max-width: 630px;
+      margin-left: 5%;
       .magicSectionPointTextBox {
         .magicSectionPointTextTitle {
           font-size: 36px;
           font-family: "Montserrat", sans-serif;
           font-weight: 800;
           text-align: left;
-          margin-bottom: 24px;
         }
         .magicSectionPointTextText {
           font-size: 24px;
           font-family: "Montserrat", sans-serif;
           font-weight: 400;
           text-align: left;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .magicSection {
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    .magicSectionTitle {
+      text-align: center;
+      font-size: 24px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+    }
+    .magicSectionBottom {
+      margin-left: 5%;
+      margin-right: 5%;
+      display: flex;
+      flex-direction: row;
+      .magicSectionPoints {
+        .magicSectionPointSquare {
+          height: 50px;
+          width: 3px;
+          background-color: #9d4f7c;
+        }
+        .magicSectionPointNumber {
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          background-color: #d6abc4;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 36px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+        }
+      }
+      .magicSectionPointText {
+        display: flex;
+        flex-direction: column;
+        .magicSectionPointTextBox {
+          .magicSectionPointTextTitle {
+            font-size: 16px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 800;
+            text-align: left;
+          }
+          .magicSectionPointTextText {
+            font-size: 14px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            text-align: left;
+          }
         }
       }
     }

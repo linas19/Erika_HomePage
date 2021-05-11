@@ -25,7 +25,9 @@ export default function TechnologyShouldSection() {
             technology, so you can focus on realising your idea.
           </p>
         </div>
-        <GetInTouchButton />
+        <div className={styles.getInTouch}>
+          <GetInTouchButton />
+        </div>
       </div>
       <div className={styles.secondPageBottomRight}>
         <Image

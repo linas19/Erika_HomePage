@@ -1,11 +1,10 @@
 .competitionSection {
-  width: 1441px;
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 162px;
-  padding-top: 195px;
+  padding-bottom: 5%;
+  padding-top: 5%;
   .competitionSectionLeft {
     padding-left: 10%;
     padding-top: 8%;
@@ -17,6 +16,32 @@
     }
   }
   .competitionSectionRight {
-    padding-right: 5%;
+    // padding-right: 5%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .competitionSection {
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    .competitionSectionLeft {
+      padding-top: 5%;
+      padding-bottom: 2%;
+      width: 50%;
+      font-size: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      .competitionSectionLeftTitle {
+        padding-bottom: 5%;
+      }
+    }
+    .competitionSectionRight {
+      margin:auto;
+      max-width: 250px;
+      // padding-right: 5%;
+    }
   }
 }

@@ -1,17 +1,15 @@
 .topLine {
     height: 20px;
     background-color: #D7890D;
-    width: 100%;
 }
 .navBar {
-    max-width: 1441px;
-    margin: auto;
     display: flex;
-    flex-direction: row;
-    padding-left: 72px;
+    justify-content: space-between;
+    padding-top: 1rem;
     .navBarLeft {
+        width: 50%;
+        margin-left: 20px;
         .navBarLeftTitle {
-            padding-top: 54px;
             font-family: Montserrat;
             font-style: normal;
             font-weight: 800;
@@ -22,9 +20,6 @@
     }
     .navBarRight {
         display: flex;
-        padding-right: 72px;
-        justify-content:flex-end;
-        padding-top: 58px;
-        width: 100%;
+        align-items: center;
     }
 }

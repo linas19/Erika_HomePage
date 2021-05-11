@@ -1,23 +1,22 @@
 .secondSection {
   background: #ffe299;
+  background: linear-gradient(to bottom, #ffe299 85%, #feeadc 41% 100%);
+  display: flex;
+  justify-content: center;
   .threePointsBackGround {
-    display: flex;
     min-height: 500px;
-    max-width: 1441px;
-    margin: auto;
     .threePoints {
       display: flex;
-      justify-content: space-evenly;
-      flex-shrink: 0;
+      flex-direction: row;
       padding-top: 100px;
-      margin-left: 72px;
-      margin-right: 72px;
-      position: absolute;
+      height: 550px;
       .solution {
         background: #f8cdba;
-        margin-right: 30px;
+        margin-left: 30px;
         flex-shrink: 0;
         max-width: 404px;
+        margin-bottom: 20px;
+        padding-top: 7%;
         .solutionBox {
           .solutionTitle {
             font-family: Montserrat;
@@ -29,7 +28,7 @@
             letter-spacing: -0.01em;
             position: relative;
             margin-left: 37.14px;
-            margin-top: 129px;
+            // margin-top: 129px;
           }
           .solutionBackRec {
             background: #fefaf2;
@@ -53,9 +52,11 @@
       }
       .technology {
         background: #d6abc4;
-        margin-right: 30px;
+        margin-left: 30px;
         flex-shrink: 0;
         max-width: 404px;
+        margin-bottom: 20px;
+        padding-top: 7%;
         .technologyBox {
           padding-bottom: 50px;
           .technologyBackRec {
@@ -76,7 +77,6 @@
             letter-spacing: -0.01em;
             position: relative;
             margin-left: 37.14px;
-            margin-top: 129px;
           }
           .technologyText {
             font-family: Montserrat;
@@ -92,9 +92,11 @@
       }
       .experience {
         background: #f3bc54;
-        margin-right: 30px;
+        margin-left: 30px;
         flex-shrink: 0;
         max-width: 404px;
+        margin-bottom: 20px;
+        padding-top: 7%;
         .experienceBox {
           .experienceBackRec {
             background: #fefaf2;
@@ -114,7 +116,6 @@
             letter-spacing: -0.01em;
             position: relative;
             margin-left: 37.14px;
-            margin-top: 129px;
           }
           .experienceText {
             font-family: Montserrat;
@@ -130,27 +131,125 @@
       }
     }
   }
-  .secondPageBottom {
-    padding-top: 100px;
-    padding-left: 166px;
-    display: flex;
-    background-color: #feeadc;
-    .secondPageBottomLeft {
-      display: flex;
-      flex-direction: column;
-      width: 700px;
-      margin-right: 100px;
-      height: 800px;
-      .secondPageBottomLeftTitle {
-        font-size: 64px;
-        font-family: "Montserrat", sans-serif;
-        font-weight: bold;
-      }
-      .secondPageBottomLeftText {
-        width: 600px;
-        font-size: 24px;
-        font-family: "Montserrat", sans-serif;
-        margin-bottom: 20px;
+}
+@media only screen and (max-width: 1100px) {
+  .secondSection {
+    background: #ffe299;
+    .threePointsBackGround {
+      .threePoints {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        height: 100%;
+        .solution {
+          background: #f8cdba;
+          margin: auto;
+          width: 90%;
+          height: 300px;
+          margin-bottom: 10px;
+          .solutionBox {
+            .solutionTitle {
+              font-family: Montserrat;
+              font-style: normal;
+              font-weight: 800;
+              font-size: 24px;
+              line-height: 44px;
+              text-align: left;
+              letter-spacing: -0.01em;
+              position: relative;
+            }
+            .solutionBackRec {
+              background: #fefaf2;
+              height: 17px;
+              width: 166px;
+              position: absolute;
+              margin-top: 20px;
+              margin-left: 40.93px;
+            }
+            .solutionText {
+              font-family: Montserrat;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 140%;
+              margin-top: 10px;
+              margin-left: 49.23px;
+              margin-right: 42.08px;
+            }
+          }
+        }
+        .technology {
+          background: #d6abc4;
+          margin: auto;
+          width: 90%;
+          height: 300px;
+          margin-bottom: 10px;
+          .technologyBox {
+            .technologyBackRec {
+              background: #fefaf2;
+              height: 17px;
+              width: 166px;
+              position: absolute;
+              margin-left: 40.93px;
+            }
+            .technologyTitle {
+              font-family: Montserrat;
+              font-style: normal;
+              font-weight: 800;
+              font-size: 24px;
+              line-height: 44px;
+              text-align: left;
+              letter-spacing: -0.01em;
+              position: relative;
+            }
+            .technologyText {
+              font-family: Montserrat;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 140%;
+              margin-top: 10px;
+              margin-left: 49.23px;
+              margin-right: 42.08px;
+            }
+          }
+        }
+        .experience {
+          background: #f3bc54;
+          margin: auto;
+          width: 90%;
+          height: 300px;
+          margin-bottom: 10px;
+          .experienceBox {
+            .experienceBackRec {
+              background: #fefaf2;
+              height: 17px;
+              width: 166px;
+              position: absolute;
+              margin-left: 40.93px;
+            }
+            .experienceTitle {
+              font-family: Montserrat;
+              font-style: normal;
+              font-weight: 800;
+              font-size: 24px;
+              line-height: 44px;
+              text-align: left;
+              letter-spacing: -0.01em;
+              position: relative;
+            }
+            .experienceText {
+              font-family: Montserrat;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 140%;
+              margin-top: 10px;
+              margin-left: 49.23px;
+              margin-right: 42.08px;
+            }
+          }
+        }
       }
     }
   }

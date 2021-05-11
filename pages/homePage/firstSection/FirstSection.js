@@ -2,18 +2,16 @@ import Image from "next/image.js";
 import styles from "./FirstSection.module.scss";
 import GetInTouchButton from '../../components/GetInTouchButton/GetInTouchButton.js'
 
-export default function FirstPage({scrollToContact}) {
+export default function FirstPage({ scrollToContact }) {
   return (
     <div className={styles.firstPage}>
       <div className={styles.firstPageLeft}>
-        <div className={styles.firstImage}>
-          <Image
-            src="/example-scene-1.png"
-            width={584}
-            height={553}
-            alt="Image1"
-          />
-        </div>
+        <Image
+          src="/example-scene-1.png"
+          width={584}
+          height={553}
+          alt="Image1"
+        />
       </div>
       <div className={styles.firstPageRight}>
         <div className={styles.firstPageRightTitle}>
@@ -24,7 +22,7 @@ export default function FirstPage({scrollToContact}) {
           app, so you can focus on what really matters - growing your business.
         </div>
         <div className={styles.getInTouchDiv}>
-        <GetInTouchButton onClick={scrollToContact}/>
+          <GetInTouchButton onClick={scrollToContact} />
         </div>
 
       </div>
