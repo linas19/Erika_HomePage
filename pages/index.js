@@ -49,10 +49,10 @@ export default function Home() {
         <section className={styles.competitionSection}>
           <CompetitionSection />
         </section>
-        {/* <section className={styles.formSection} ref={bottomRef}>
+        <section className={styles.formSection} ref={bottomRef}>
           <FormSection />
-        </section> */}
-        {/* <Footer /> */}
+        </section>
+        <Footer />
       </body>
     </div>
   )
