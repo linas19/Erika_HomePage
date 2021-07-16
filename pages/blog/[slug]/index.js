@@ -3,7 +3,7 @@ import NavBar from "../../../components/NavBar/NavBar.js";
 import Footer from "../../../components/Footer/Footer.js";
 import Head from "next/head";
 import React from "react";
-import { fetchEntries } from "../util/contentfulPosts.js";
+import { fetchEntries } from "../../../utils/util/contentfulPosts.js";
 import BlogContentTable from "../../../components/BlogContentTable/BlogContentTable.js";
 import BlogDetailContent from "../../../components/BlogDetailContent/BlogDetailContent.js";
 
