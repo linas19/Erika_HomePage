@@ -1,5 +1,5 @@
 import Image from "next/image.js";
-import GetInTouchButton from "../../components/GetInTouchButton/GetInTouchButton.js";
+import GetInTouchButton from "../../../components/GetInTouchButton/GetInTouchButton.js";
 import styles from "./CompetitionSection.module.scss";
 
 export default function CompetitionSection() {

@@ -1,13 +1,12 @@
 import styles from "./blog.module.scss";
-import NavBar from "../components/NavBar/NavBar.js";
-import Footer from "../components/Footer/Footer.js";
+import NavBar from "../../components/NavBar/NavBar.js";
+import Footer from "../../components/Footer/Footer.js";
 import Head from "next/head";
 import React, { useState } from "react";
-
 import { fetchEntries } from "./util/contentfulPosts.js";
-import LatestPost from "../components/LatestPost/LatestPost.js";
-import BlogNavBar from "../components/BlogNavBar/BlogNavBar.js";
-import BlogContentTable from "../components/BlogContentTable/BlogContentTable.js";
+import LatestPost from "../../components/LatestPost/LatestPost.js";
+import BlogNavBar from "../../components/BlogNavBar/BlogNavBar.js";
+import BlogContentTable from "../../components/BlogContentTable/BlogContentTable.js";
 
 export default function Blog({ posts }) {
   const [highlightedButton, setHighlightedButton] = useState("all");

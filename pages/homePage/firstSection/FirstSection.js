@@ -1,6 +1,6 @@
 import Image from "next/image.js";
 import styles from "./FirstSection.module.scss";
-import GetInTouchButton from '../../components/GetInTouchButton/GetInTouchButton.js'
+import GetInTouchButton from '../../../components/GetInTouchButton/GetInTouchButton.js'
 
 export default function FirstPage({ scrollToContact }) {
   return (

@@ -1,6 +1,6 @@
 import Image from "next/image.js";
 import styles from "./HiSection.module.scss";
-import SocialMediaButtons from "../../components/SocialMediaButtons/SocialMediaButtons.js";
+import SocialMediaButtons from "../../../components/SocialMediaButtons/SocialMediaButtons.js";
 
 export default function HiSection() {
   return (

@@ -1,11 +1,11 @@
 import styles from "./blogDetail.module.scss";
 import NavBar from "../components/NavBar/NavBar.js";
-import Footer from "../components/Footer/Footer.js";
+import Footer from "../../components/Footer/Footer.js.js";
 import Head from "next/head";
 import React from "react";
 import { fetchEntries } from "./util/contentfulPosts.js";
 import BlogContentTable from "../components/BlogContentTable/BlogContentTable.js";
-import BlogDetailContent from "../components/BlogDetailContent/BlogDetailContent.js";
+import BlogDetailContent from "../../components/BlogDetailContent/BlogDetailContent.js.js";
 
 export default function BlogDetail({ posts }) {
   console.log(posts[0].publishDate);

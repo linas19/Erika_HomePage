@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 import React from 'react'
-import NavBar from './components/NavBar/NavBar.js'
+import NavBar from '../components/NavBar/NavBar.js'
 import FirstSection from './homePage/firstSection/FirstSection.js'
 import ThreePointsSection from './homePage/threePointSection/ThreePointsSection.js'
 import HiSection from './homePage/hiSection/HiSection.js'
@@ -10,7 +10,7 @@ import AlexSection from './homePage/alexSection/AlexSection.js'
 import MagicSection from './homePage/magicSection/MagicSection.js'
 import CompetitionSection from './homePage/competitionSection/CompetitionSection.js'
 import FormSection from './homePage/formSection/FormSection.js'
-import Footer from './components/Footer/Footer.js'
+import Footer from '../components/Footer/Footer.js'
 
 export default function Home() {
 

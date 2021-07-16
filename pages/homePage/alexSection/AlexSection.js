@@ -1,5 +1,3 @@
-import Image from "next/image.js";
-import GetInTouchButton from "../../components/GetInTouchButton/GetInTouchButton.js";
 import styles from "./AlexSection.module.scss";
 
 export default function AlexSection() {
