@@ -11,6 +11,7 @@ import BlogContentTable from "../components/BlogContentTable/BlogContentTable.js
 
 export default function Blog({ posts }) {
   const [highlightedButton, setHighlightedButton] = useState("all");
+  
   const latest = posts[posts.length - 1];
   const remainingPosts = posts.slice(0, posts.length - 1);
   const filteredPosts = remainingPosts.filter((post) => {
@@ -19,7 +20,6 @@ export default function Blog({ posts }) {
     }
     return post.tags && post.tags.includes(highlightedButton);
   });
-  console.log(remainingPosts);
 
   return (
     <div className={styles.blog}>
@@ -41,7 +41,7 @@ export default function Blog({ posts }) {
         description={latest.description}
         slug={latest.slug}
       />
-      <BlogNavBar onClick={setHighlightedButton} />
+      <BlogNavBar onClick={setHighlightedButton} highlighted={highlightedButton}/>
       <div className={styles.blogTableFirstRowDetail}>
         {filteredPosts.map((post) => {
           return (
