@@ -26,6 +26,7 @@
     "url-loader": "^4.1.1"
   },
   "devDependencies": {
+    "encoding": "^0.1.13",
     "webpack": "^5.26.1"
   }
 }
