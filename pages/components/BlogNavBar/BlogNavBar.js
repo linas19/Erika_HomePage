@@ -1,8 +1,7 @@
 import styles from "./BlogNavBar.module.scss";
 import stylesButton from "../navBarLink/navBarLink.module.scss"
 
-function BlogNavBar({ highlighted, onClick, all, tech, getIn, prod }) {
-  // const ifHighlighted = highlighted === 'all' ? all === true : highlighted === 'techStartups' ? tech === true : false 
+function BlogNavBar({ highlighted, onClick }) {
   const allClass = highlighted === 'all'
     ? stylesButton.navBarButtonHighlighted
     : stylesButton.navBarButton;
