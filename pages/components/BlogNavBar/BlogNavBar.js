@@ -1,17 +1,17 @@
 import styles from "./BlogNavBar.module.scss";
-import stylesButton from "../navBarLink/navBarLink.module.scss"
+// import stylesButton from "../navBarLink/navBarLink.module.scss"
 
 function BlogNavBar({ highlighted, onClick }) {
   const allClass = highlighted === 'all'
-    ? stylesButton.navBarButtonHighlighted
-    : stylesButton.navBarButton;
-  const techClass = highlighted === 'techStartups' ? stylesButton.navBarButtonHighlighted : stylesButton.navBarButton
+    ? styles.navBarButtonHighlighted
+    : styles.navBarButton;
+  const techClass = highlighted === 'techStartups' ? styles.navBarButtonHighlighted : styles.navBarButton
   const getClass = highlighted === 'gettingIntoTech'
-  ? stylesButton.navBarButtonHighlighted
-  : stylesButton.navBarButton;
+  ? styles.navBarButtonHighlighted
+  : styles.navBarButton;
   const prodClass = highlighted === 'productivity'
-  ? stylesButton.navBarButtonHighlighted
-  : stylesButton.navBarButton;
+  ? styles.navBarButtonHighlighted
+  : styles.navBarButton;
   return (
     <div className={styles.navBar}>
       <div className={styles.navBarContent}>

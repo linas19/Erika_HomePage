@@ -24,6 +24,10 @@
     outline: none;
     padding-right: 42px;
 }
+.navBarButton:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .navBarButtonHighlighted {
     border: none;
     background: none;
@@ -33,6 +37,9 @@
     padding-right: 42px;
     font-weight: bold;
     cursor: pointer;
+}
+.navBarButtonHighlighted:hover{
+    text-decoration: underline;
 }
 .link {
     cursor: pointer;
