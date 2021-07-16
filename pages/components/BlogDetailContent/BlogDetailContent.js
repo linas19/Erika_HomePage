@@ -13,8 +13,7 @@ function BlogDetailContent({
 }) {
   return (
     <div className={styles.blogDetailContent}>
-      <div className={styles.topImage}>
-        <img src={`https:${heroImage}`} width={683} height={429} />
+      <div className={styles.topImage} style={{backgroundImage: `url(https:${heroImage})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
       </div>
       <div className={styles.underImage}>
         <div className={styles.underImageLeft}>

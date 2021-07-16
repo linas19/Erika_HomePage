@@ -1,10 +1,10 @@
 import styles from "./BlogNavBar.module.scss";
-
+import stylesButton from "../navBarLink/navBarLink.module.scss"
 
 function BlogNavBar({ highlighted, onClick }) {
   const styleClass = highlighted
-    ? styles.navBarButtonHighlighted
-    : styles.navBarButton;
+    ? stylesButton.navBarButtonHighlighted
+    : stylesButton.navBarButton;
   return (
     <div className={styles.navBar}>
       <div className={styles.navBarContent}>

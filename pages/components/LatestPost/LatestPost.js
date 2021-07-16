@@ -5,9 +5,7 @@ import Link from "next/link.js";
 function LatestPost({ title, heroImage, description, slug }) {
   return (
     <div className={styles.latestPost}>
-      <div className={styles.latestPostLeft}>
-        <img src={`https:${heroImage}`} width={683 / 1.5} height={429 / 1.5} />
-      </div>
+      <div className={styles.latestPostLeft} style={{backgroundImage: `url(https:${heroImage})`, backgroundPosition: 'center',   backgroundRepeat: 'no-repeat'}}></div>
       <div className={styles.latestPostRight}>
         <div className={styles.latestPostRightLatest}>LATEST POST</div>
         <div className={styles.latestPostRightTitle}>{title}</div>

@@ -5,12 +5,10 @@ function BlogContentTable({ title, heroImage, description, slug }) {
   return (
     <div className={styles.blogContentTable}>
       <a className={styles.blogContentTableLink} href={`/blog/${slug}`}>
-        <img
+        <div
           className={styles.blogContentTableImage}
-          src={`https:${heroImage}`}
-          width={683 / 2}
-          height={429 / 2}
-        />
+          style={{backgroundImage: `url(https:${heroImage})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}
+        ></div>
         <div className={styles.blogContentTableTitle}>{title}</div>
       </a>
       <div className={styles.blogContentTableDescription}>{description}</div>
